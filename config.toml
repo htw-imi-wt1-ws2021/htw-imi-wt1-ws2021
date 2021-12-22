@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
+title = "WT1 Website based on Hugo Learn Documentation"
 theme = "hugo-theme-learn-wt1"
 #themesdir = "../.."
 metaDataFormat = "yaml"
