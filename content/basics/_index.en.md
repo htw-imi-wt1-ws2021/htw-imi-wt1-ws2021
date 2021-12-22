@@ -1,7 +1,7 @@
 ---
 title: Basics
-weight: 5
-pre: "<b>1. </b>"
+weight: 105
+pre: "<b>lt-1. </b>"
 chapter: true
 ---
 
