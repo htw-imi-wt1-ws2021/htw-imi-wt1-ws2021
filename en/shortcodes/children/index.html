@@ -7,17 +7,17 @@
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
 <title>Children :: Documentation for Hugo Learn Theme</title>
-<link href=/css/nucleus.css?1640168841 rel=stylesheet>
-<link href=/css/fontawesome-all.min.css?1640168841 rel=stylesheet>
-<link href=/css/hybrid.css?1640168841 rel=stylesheet>
-<link href=/css/featherlight.min.css?1640168841 rel=stylesheet>
-<link href=/css/perfect-scrollbar.min.css?1640168841 rel=stylesheet>
-<link href=/css/auto-complete.css?1640168841 rel=stylesheet>
-<link href=/css/atom-one-dark-reasonable.css?1640168841 rel=stylesheet>
-<link href=/css/theme.css?1640168841 rel=stylesheet>
-<link href=/css/tabs.css?1640168841 rel=stylesheet>
-<link href=/css/hugo-theme.css?1640168841 rel=stylesheet>
-<script src=/js/jquery-3.3.1.min.js?1640168841></script>
+<link href=/css/nucleus.css?1640169333 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1640169333 rel=stylesheet>
+<link href=/css/hybrid.css?1640169333 rel=stylesheet>
+<link href=/css/featherlight.min.css?1640169333 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1640169333 rel=stylesheet>
+<link href=/css/auto-complete.css?1640169333 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1640169333 rel=stylesheet>
+<link href=/css/theme.css?1640169333 rel=stylesheet>
+<link href=/css/tabs.css?1640169333 rel=stylesheet>
+<link href=/css/hugo-theme.css?1640169333 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1640169333></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/en/shortcodes/children/>
@@ -32,10 +32,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/js/lunr.min.js?1640168841></script>
-<script type=text/javascript src=/js/auto-complete.js?1640168841></script>
+<script type=text/javascript src=/js/lunr.min.js?1640169333></script>
+<script type=text/javascript src=/js/auto-complete.js?1640169333></script>
 <script type=text/javascript>var baseurl="//en"</script>
-<script type=text/javascript src=/js/search.js?1640168841></script>
+<script type=text/javascript src=/js/search.js?1640169333></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -44,6 +44,14 @@
 <b>1. </b>About
 <i class="fas fa-check read-icon"></i>
 </a>
+<ul>
+<li data-nav-id=/en/about/hugo-setup/ title="Hugo Setup" class=dd-item>
+<a href=/en/about/hugo-setup/>
+Hugo Setup
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
 </li>
 <li data-nav-id=/en/basics/ title=Basics class=dd-item>
 <a href=/en/basics/>
@@ -471,13 +479,140 @@ Children
 </h2>
 <p>This is a demo child page</p>
 <h3>
-<a href=/en/shortcodes/children/children-1/children-1-1/>page 1-1</a>
+<a href=/en/about/>About</a>
 </h3>
-<p>This is a demo child page</p>
+<p>Chapter 1 About &mldr;</p>
 <h4>
-<a href=/en/shortcodes/children/children-1/children-1-1/children-1-1-1/>page 1-1-1</a>
+<a href=/en/about/hugo-setup/>Hugo Setup</a>
 </h4>
-<p>This is a demo child page</p>
+<p>Doc of this site's setup</p>
+<h3>
+<a href=/en/basics/>Basics</a>
+</h3>
+<p>Chapter 1 Basics Discover what this Hugo theme is all about and the core-concepts behind it.</p>
+<h4>
+<a href=/en/basics/requirements/>Requirements</a>
+</h4>
+<p>Thanks to the simplicity of Hugo, this page is as empty as this theme needs requirements.
+Just download latest version of Hugo binary (> 0.25) for your OS (Windows, Linux, Mac) : it&rsquo;s that simple.</p>
+<h4>
+<a href=/en/basics/installation/>Installation</a>
+</h4>
+<p>The following steps are here to help you initialize your new website. If you don&rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
+Create your project Hugo provides a new command to create a new website.
+hugo new site &lt;new_project> Install the theme Install the Hugo-theme-learn theme by following this documentation
+This theme&rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git
+Alternatively, you can download the theme as .</p>
+<h4>
+<a href=/en/basics/configuration/>Configuration</a>
+</h4>
+<p>Global site parameters On top of Hugo global configuration, Hugo-theme-learn lets you define the following parameters in your config.toml (here, values are default).
+Note that some of these parameters are explained in details in other sections of this documentation.
+[params] # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. # Useful to give opportunity to people to create merge request for your doc.</p>
+<h4>
+<a href=/en/basics/style-customization/>Style customization</a>
+</h4>
+<p>Hugo-theme-learn has been built to be as configurable as possible by defining multiple partials
+In themes/hugo-theme-learn/layouts/partials/, you will find all the partials defined for this theme. If you need to overwrite something, don&rsquo;t change the code directly. Instead follow this page. You&rsquo;d create a new partial in the layouts/partials folder of your local project. This partial will have the priority.
+This theme defines the following partials :
+header: the header of the content page (contains the breadcrumbs).</p>
+<h3>
+<a href=/en/cont/>Content</a>
+</h3>
+<p>Chapter 2 Content Find out how to create and organize your content quickly and intuitively.</p>
+<h4>
+<a href=/en/cont/pages/>Pages organization</a>
+</h4>
+<p>In Hugo, pages are the core of your site. Once it is configured, pages are definitely the added value to your documentation site.
+Folders Organize your site like any other Hugo project. Typically, you will have a content folder with all your pages.
+content ├── level-one │ ├── level-two │ │ ├── level-three │ │ │ ├── level-four │ │ │ │ ├── _index.md &lt;-- /level-one/level-two/level-three/level-four │ │ │ │ ├── page-4-a.</p>
+<h4>
+<a href=/en/cont/archetypes/>Archetypes</a>
+</h4>
+<p>Using the command: hugo new [relative new content path], you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more: archetypes.
+It is pre-configured skeleton pages with default front matter. Please refer to the documentation for types of page to understand the differences.
+Chapter To create a Chapter page, run the following commands
+hugo new --kind chapter &lt;name>/_index.md It will create a page with predefined Front-Matter:</p>
+<h4>
+<a href=/en/cont/markdown/>Markdown syntax</a>
+</h4>
+<p>This page is a shameful copy of the great Grav original page. Only difference is information about image customization (resizing, add CSS classes&mldr;)
+Let&rsquo;s face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
+Markdown is a better way to write HTML, without all the complexities and ugliness that usually accompanies it.</p>
+<h4>
+<a href=/en/cont/syntaxhighlight/>Code highlighting</a>
+</h4>
+<p>Learn theme uses highlight.js to provide code syntax highlighting.
+Markdown syntax Wrap the code block with three backticks and the name of the language. Highlight will try to auto detect the language if one is not provided.
+```json [ { "title": "apples", "count": [12000, 20000], "description": {"text": "...", "sensitive": false} }, { "title": "oranges", "count": [17500, null], "description": {"text": "...", "sensitive": false} } ] ``` Renders to:
+[ { "title": "apples", "count": [12000, 20000], "description": {"text": ".</p>
+<h4>
+<a href=/en/cont/menushortcuts/>Menu extra shortcuts</a>
+</h4>
+<p>You can define additional menu entries or shortcuts in the navigation menu without any link to content.
+Basic configuration Edit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.
+Example from the current website:
+[[menu.shortcuts]] name = "&lt;i class='fab fa-github'>&lt;/i> Github repo" identifier = "ds" url = "https://github.com/matcornic/hugo-theme-learn" weight = 10 [[menu.shortcuts]] name = "&lt;i class='fas fa-camera'>&lt;/i> Showcases" url = "/showcase" weight = 11 [[menu.</p>
+<h4>
+<a href=/en/cont/icons/>Icons and logos</a>
+</h4>
+<p>The Learn theme for Hugo loads the Font Awesome library, allowing you to easily display any icon or logo available in the Font Awesome free collection.
+Finding an icon Browse through the available icons in the Font Awesome Gallery. Notice that the free filter is enabled, as only the free icons are available by default.
+Once on the Font Awesome page for a specific icon, for example the page for the heart, copy the HTML reference and paste into the markdown content.</p>
+<h4>
+<a href=/en/cont/i18n/>Multilingual and i18n</a>
+</h4>
+<p>Learn theme is fully compatible with Hugo multilingual mode.
+It provides:
+Translation strings for default values (English and French). Feel free to contribute ! Automatic menu generation from multilingual content In-browser language switching Basic configuration After learning how Hugo handle multilingual websites, define your languages in your config.toml file.
+For example with current French and English website.
+# English is the default language defaultContentLanguage = "en" # Force to have /en/my-page and /fr/my-page routes, even for default language.</p>
+<h4>
+<a href=/en/cont/tags/>Tags</a>
+</h4>
+<p>Learn theme support one default taxonomy of gohugo: the tag feature.
+Configuration Just add tags to any page:
+--- date: 2018-11-29T08:41:44+01:00 title: Theme tutorial weight: 15 tags: ["tutorial", "theme"] --- Behavior The tags are displayed at the top of the page, in their insertion order.
+Each tag is a link to a Taxonomy page displaying all the articles with the given tag.
+List all the tags In the config.toml file you can add a shortcut to display all the tags</p>
+<h3>
+<a href=/en/shortcodes/>Shortcodes</a>
+</h3>
+<p>Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.
+But this happens to be a bad idea. Everyone uses Markdown because it&rsquo;s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.
+To avoid this limitations, Hugo created shortcodes. A shortcode is a simple snippet inside a page.</p>
+<h4>
+<a href=/en/shortcodes/attachments/>Attachments</a>
+</h4>
+<p>The Attachments shortcode displays a list of files attached to a page.</p>
+<h4>
+<a href=/en/shortcodes/button/>Button</a>
+</h4>
+<p>Nice buttons on your page.</p>
+<h4>
+<a href=/en/shortcodes/children/>Children</a>
+</h4>
+<p>List the child pages of a page</p>
+<h4>
+<a href=/en/shortcodes/expand/>Expand</a>
+</h4>
+<p>Displays an expandable/collapsible section of text on your page</p>
+<h4>
+<a href=/en/shortcodes/mermaid/>Mermaid</a>
+</h4>
+<p>Generation of diagram and flowchart from text in a similar manner as markdown</p>
+<h4>
+<a href=/en/shortcodes/notice/>Notice</a>
+</h4>
+<p>Disclaimers to help you structure your page</p>
+<h4>
+<a href=/en/shortcodes/siteparam/>Site param</a>
+</h4>
+<p>Get value of site params variables in your page.</p>
+<h4>
+<a href=/en/shortcodes/tabs/>Tabbed views</a>
+</h4>
+<p>Synchronize selection of content in different tabbed views</p>
 <h2>
 <a href=/en/shortcodes/children/children-2/>page 2</a>
 </h2>
@@ -538,16 +673,16 @@ Children
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/js/clipboard.min.js?1640168841></script>
-<script src=/js/perfect-scrollbar.min.js?1640168841></script>
-<script src=/js/perfect-scrollbar.jquery.min.js?1640168841></script>
-<script src=/js/jquery.sticky.js?1640168841></script>
-<script src=/js/featherlight.min.js?1640168841></script>
-<script src=/js/highlight.pack.js?1640168841></script>
+<script src=/js/clipboard.min.js?1640169333></script>
+<script src=/js/perfect-scrollbar.min.js?1640169333></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1640169333></script>
+<script src=/js/jquery.sticky.js?1640169333></script>
+<script src=/js/featherlight.min.js?1640169333></script>
+<script src=/js/highlight.pack.js?1640169333></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/js/modernizr.custom-3.6.0.js?1640168841></script>
-<script src=/js/learn.js?1640168841></script>
-<script src=/js/hugo-learn.js?1640168841></script>
+<script src=/js/modernizr.custom-3.6.0.js?1640169333></script>
+<script src=/js/learn.js?1640169333></script>
+<script src=/js/hugo-learn.js?1640169333></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 <script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-105947713-1','auto'),ga('send','pageview')</script>
