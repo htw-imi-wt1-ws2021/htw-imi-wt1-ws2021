@@ -1,13 +1,12 @@
 ---
 title: 5 Vergleich in Tabellenform
 description : "Vergleich in Tabellenform"
+tags: ["chapter1", "vergleich"]
 ---
-
-#chapter1 #vergleich
 
 Im folgenden Abschnitt werden die fünf vorgestellten Programmiersprachen tabellarisch nach ihren Eigenschaften verglichen, um für einen groben Überblick zu sorgen.
 
-![Tabelle](/en/programmingLanguages/images/table.jpg?width=45pc)
+![Tabelle](/programmingLanguages/images/table.jpg?width=45pc)
 
 Auffällig hierbei ist, dass alle Programmiersprachen sowohl im Frontend als auch im Backend verwendet werden können, was nicht notwendigerweise bedeutet, dass das auch so praktiziert wird. Außerdem ist bei allen vorgestellten Programmiersprachen objektorientiertes Programmieren möglich beziehungsweise manche Sprachen bieten ein ähnliches Schema für Klassen.
 

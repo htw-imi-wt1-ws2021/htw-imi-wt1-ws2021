@@ -1,9 +1,8 @@
 ---
 title: 7 Literaturverzeichnis
 description : "Literaturverzeichnis"
+tags: ["chapter1", "literaturverzeichnis"]
 ---
-
-#chapter1 #literaturverzeichnis
 
 - “JavaScript”, Mozilla, Link: https://developer.mozilla.org/de/docs/Web/JavaScript (letzter Zugriff am: 12:02 30.12.2021)
 - “JavaScript”, Wikipedia, Link: https://de.wikipedia.org/wiki/JavaScript (letzter Zugriff am 13:37 30.12.2021)

@@ -1,9 +1,8 @@
 ---
 title: 2 Frontend und Backend
 description : "Frontend und Backend"
+tags: ["chapter1", "frontend", "backend"]
 ---
-
-#chapter1 #frontend #backend
 
 #### 2.1 Frontend
 
