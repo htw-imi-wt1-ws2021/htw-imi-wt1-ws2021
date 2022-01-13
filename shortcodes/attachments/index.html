@@ -3,10 +3,10 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=generator content="Hugo 0.92.0">
-<meta name=description content="Documentation for Hugo Learn Theme">
+<meta name=description content="The Attachments shortcode displays a list of files attached to a page.">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>Learn Theme for Hugo :: Documentation for Hugo Learn Theme</title>
+<title>Attachments :: Documentation for Hugo Learn Theme</title>
 <link href=/css/nucleus.css?1642101123 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642101123 rel=stylesheet>
 <link href=/css/hybrid.css?1642101123 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642101123></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/>
+<body data-url=/shortcodes/attachments/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -177,13 +177,14 @@ Tags
 </li>
 </ul>
 </li>
-<li data-nav-id=/shortcodes/ title=Shortcodes class=dd-item>
+<li data-nav-id=/shortcodes/ title=Shortcodes class="dd-item
+parent">
 <a href=/shortcodes/>
 <b>lt-3. </b>Shortcodes
 <i class="fas fa-check read-icon"></i>
 </a>
 <ul>
-<li data-nav-id=/shortcodes/attachments/ title=Attachments class=dd-item>
+<li data-nav-id=/shortcodes/attachments/ title=Attachments class="dd-item active">
 <a href=/shortcodes/attachments/>
 Attachments
 <i class="fas fa-check read-icon"></i>
@@ -331,18 +332,332 @@ Tabbed views
 <section id=body>
 <div id=overlay></div>
 <div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/shortcodes/attachments.en.md target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/>Learn Theme for Hugo</a> > <a href=/shortcodes/>Shortcodes</a> > Attachments
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#usage>Usage</a>
+<ul>
+<li><a href=#parameters>Parameters</a></li>
+<li><a href=#examples>Examples</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
 <div id=head-tags>
 </div>
 <div id=body-inner>
-<span id=sidebar-toggle-span>
-<a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i> navigation</a>
-</span>
-<h1 id=wt1---web-applications--wise202122>WT1 - Web Applications | WiSe2021/22</h1>
-<p>Lorem Ipsum</p>
+<h1>
+Attachments
+</h1>
+<p>The Attachments shortcode displays a list of files attached to a page.</p>
+<section class=attachments>
+<label>
+<i class="fas fa-paperclip" aria-hidden=true></i>
+Attachments
+</label>
+<div class=attachments-files>
+<li>
+<a href=/shortcodes/attachments.en.files/BachGavotteShort.mp3>BachGavotteShort.mp3</a>
+(357 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf>Carroll_AliceAuPaysDesMerveilles.pdf</a>
+(175 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf>adivorciarsetoca00cape.pdf</a>
+(361 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/hugo.png>hugo.png</a>
+(17 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/movieselectricsheep-flock-244-32500-2.mp4>movieselectricsheep-flock-244-32500-2.mp4</a>
+(340 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/small_file.txt>small_file.txt</a>
+(48 B)
+</li>
+</div>
+</section>
+<h2 id=usage>Usage</h2>
+<p>The shortcurt lists files found in a <strong>specific folder</strong>.
+Currently, it support two implementations for pages</p>
+<ol>
+<li>
+<p>If your page is a markdown file, attachements must be placed in a <strong>folder</strong> named like your page and ending with <strong>.files</strong>.</p>
+<blockquote>
+<ul>
+<li>content
+<ul>
+<li>_index.md</li>
+<li>page.files
+<ul>
+<li>attachment.pdf</li>
+</ul>
+</li>
+<li>page.md</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>If your page is a <strong>folder</strong>, attachements must be placed in a nested <strong>&lsquo;files&rsquo;</strong> folder.</p>
+<blockquote>
+<ul>
+<li>content
+<ul>
+<li>_index.md</li>
+<li>page
+<ul>
+<li>index.md</li>
+<li>files
+<ul>
+<li>attachment.pdf</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p>Be aware that if you use a multilingual website, you will need to have as many folders as languages.</p>
+<p>That&rsquo;s all!</p>
+<h3 id=parameters>Parameters</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:left>Parameter</th>
+<th style=text-align:left>Default</th>
+<th style=text-align:left>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left>title</td>
+<td style=text-align:left>&ldquo;Attachments&rdquo;</td>
+<td style=text-align:left>List&rsquo;s title</td>
+</tr>
+<tr>
+<td style=text-align:left>style</td>
+<td style=text-align:left>""</td>
+<td style=text-align:left>Choose between &ldquo;orange&rdquo;, &ldquo;grey&rdquo;, &ldquo;blue&rdquo; and &ldquo;green&rdquo; for nice style</td>
+</tr>
+<tr>
+<td style=text-align:left>pattern</td>
+<td style=text-align:left>&ldquo;.*&rdquo;</td>
+<td style=text-align:left>A regular expression, used to filter the attachments by file name. The <strong>pattern</strong> parameter value must be a <a href=https://en.wikipedia.org/wiki/Regular_expression>regular expression</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<ul>
+<li>To match a file suffix of &lsquo;.jpg&rsquo;, use <code>.*\.jpg$</code> (not <code>*.jpg</code>).</li>
+<li>To match file names ending in &lsquo;.jpg&rsquo; or &lsquo;.png&rsquo;, use <code>.*\.(jpg|png)$</code>.</li>
+</ul>
+<h3 id=examples>Examples</h3>
+<h4 id=list-of-attachments-ending-in-pdf-or-mp4>List of attachments ending in pdf or mp4</h4>
+<pre><code>{{%attachments title=&quot;Related files&quot; pattern=&quot;.*\.(pdf|mp4)$&quot;/%}}
+</code></pre>
+<p>renders as</p>
+<section class=attachments>
+<label>
+<i class="fas fa-paperclip" aria-hidden=true></i>
+Related files
+</label>
+<div class=attachments-files>
+<li>
+<a href=/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf>Carroll_AliceAuPaysDesMerveilles.pdf</a>
+(175 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf>adivorciarsetoca00cape.pdf</a>
+(361 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/movieselectricsheep-flock-244-32500-2.mp4>movieselectricsheep-flock-244-32500-2.mp4</a>
+(340 KB)
+</li>
+</div>
+</section>
+<h4 id=colored-styled-box>Colored styled box</h4>
+<pre><code>{{%attachments style=&quot;orange&quot; /%}}
+</code></pre>
+<p>renders as</p>
+<section class="attachments orange">
+<label>
+<i class="fas fa-paperclip" aria-hidden=true></i>
+Attachments
+</label>
+<div class=attachments-files>
+<li>
+<a href=/shortcodes/attachments.en.files/BachGavotteShort.mp3>BachGavotteShort.mp3</a>
+(357 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf>Carroll_AliceAuPaysDesMerveilles.pdf</a>
+(175 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf>adivorciarsetoca00cape.pdf</a>
+(361 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/hugo.png>hugo.png</a>
+(17 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/movieselectricsheep-flock-244-32500-2.mp4>movieselectricsheep-flock-244-32500-2.mp4</a>
+(340 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/small_file.txt>small_file.txt</a>
+(48 B)
+</li>
+</div>
+</section>
+<pre><code>{{%attachments style=&quot;grey&quot; /%}}
+</code></pre>
+<p>renders as</p>
+<section class="attachments grey">
+<label>
+<i class="fas fa-paperclip" aria-hidden=true></i>
+Attachments
+</label>
+<div class=attachments-files>
+<li>
+<a href=/shortcodes/attachments.en.files/BachGavotteShort.mp3>BachGavotteShort.mp3</a>
+(357 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf>Carroll_AliceAuPaysDesMerveilles.pdf</a>
+(175 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf>adivorciarsetoca00cape.pdf</a>
+(361 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/hugo.png>hugo.png</a>
+(17 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/movieselectricsheep-flock-244-32500-2.mp4>movieselectricsheep-flock-244-32500-2.mp4</a>
+(340 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/small_file.txt>small_file.txt</a>
+(48 B)
+</li>
+</div>
+</section>
+<pre><code>{{%attachments style=&quot;blue&quot; /%}}
+</code></pre>
+<p>renders as</p>
+<section class="attachments blue">
+<label>
+<i class="fas fa-paperclip" aria-hidden=true></i>
+Attachments
+</label>
+<div class=attachments-files>
+<li>
+<a href=/shortcodes/attachments.en.files/BachGavotteShort.mp3>BachGavotteShort.mp3</a>
+(357 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf>Carroll_AliceAuPaysDesMerveilles.pdf</a>
+(175 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf>adivorciarsetoca00cape.pdf</a>
+(361 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/hugo.png>hugo.png</a>
+(17 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/movieselectricsheep-flock-244-32500-2.mp4>movieselectricsheep-flock-244-32500-2.mp4</a>
+(340 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/small_file.txt>small_file.txt</a>
+(48 B)
+</li>
+</div>
+</section>
+<pre><code>{{%attachments style=&quot;green&quot; /%}}
+</code></pre>
+<p>renders as</p>
+<section class="attachments green">
+<label>
+<i class="fas fa-paperclip" aria-hidden=true></i>
+Attachments
+</label>
+<div class=attachments-files>
+<li>
+<a href=/shortcodes/attachments.en.files/BachGavotteShort.mp3>BachGavotteShort.mp3</a>
+(357 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf>Carroll_AliceAuPaysDesMerveilles.pdf</a>
+(175 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf>adivorciarsetoca00cape.pdf</a>
+(361 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/hugo.png>hugo.png</a>
+(17 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/movieselectricsheep-flock-244-32500-2.mp4>movieselectricsheep-flock-244-32500-2.mp4</a>
+(340 KB)
+</li>
+<li>
+<a href=/shortcodes/attachments.en.files/small_file.txt>small_file.txt</a>
+(48 B)
+</li>
+</div>
+</section>
+<footer class=footline>
+</footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/programminglanguages/ title="Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/shortcodes/ title=Shortcodes> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/shortcodes/button/ title=Button style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

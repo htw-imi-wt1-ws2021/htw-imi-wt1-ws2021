@@ -1,0 +1,478 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.92.0">
+<meta name=description content="Verschiedene Web-Programmiersprachen">
+<meta name=author content="Mathieu Cornic">
+<link rel=icon href=/images/favicon.png type=image/png>
+<title>3 Verschiedene Web-Programmiersprachen :: Documentation for Hugo Learn Theme</title>
+<link href=/css/nucleus.css?1642101123 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1642101123 rel=stylesheet>
+<link href=/css/hybrid.css?1642101123 rel=stylesheet>
+<link href=/css/featherlight.min.css?1642101123 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1642101123 rel=stylesheet>
+<link href=/css/auto-complete.css?1642101123 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1642101123 rel=stylesheet>
+<link href=/css/theme.css?1642101123 rel=stylesheet>
+<link href=/css/tabs.css?1642101123 rel=stylesheet>
+<link href=/css/hugo-theme.css?1642101123 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1642101123></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/programminglanguages/_3_verschiedene_websprachen/>
+<nav id=sidebar class=showVisitedLinks>
+<div id=header-wrapper>
+<div id=header>
+<a id=logo href=/><svg id="grav-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 285.1 69.9"><g><path d="M35 0c9.6.0 17.9 3.4 24.7 10.3C66.5 17.1 70 25.3 70 35s-3.4 17.9-10.3 24.7C52.9 66.5 44.7 70 35 70c-9.7.0-17.9-3.4-24.7-10.3C3.4 52.8.0 44.6.0 34.9.0 25.3 3.4 17 10.3 10.2 17.1 3.4 25.3.0 35 0zM22.3 63.7c.3-7.4.3-14.7.0-22.1-2.1-.4-4-.4-5.9.0-.2.8-.2 2.5-.1 4.9.1 2.3.0 3.9-.3 4.8-1.7-.6-2.7-2.1-3.1-4.6-.1-.7-.1-3.3-.1-8 0-14.5-.1-23-.3-25.6-3.6 4.1-5.6 7-5.9 8.5v10.9c0 4.5.1 8.1.2 10.9.0.4.0 1.3-.1 2.8-.1 1.2.0 2.1.1 2.6.1.6 1.1 2.1 2.8 4.7C13.2 58.7 17.5 62.2 22.3 63.7zm22.3 1.7c.3-5 .2-12.9-.1-23.6-2.1-.3-4.1-.3-5.9.0-.2 2-.2 5.1-.1 9.5.1 4.3.0 7.5-.1 9.5-2.9.4-5 .3-6.2-.1-.2-5.6-.2-15.2-.1-28.7.1-12.4.0-21.8-.3-28.3-2.4.1-4.3.6-5.7 1.3-.1 7.7-.2 17.7-.1 30.1.0 16.5.0 26.6.0 30.3 2.3 1.1 5.4 1.7 9.4 1.7C38.9 66.9 42.1 66.4 44.6 65.4zM48.1 64.1c9.7-4.6 15.7-12 18-22.2-1.8-.2-3.8-.3-6.1-.3-1.6 3.9-2.6 6.3-3.2 7.2-1.1 1.7-2 2.5-2.7 2.5C54 46 54 39.1 54 30.5c0-11.5.0-18.4.0-20.9-1.4-1.4-3.3-2.5-5.7-3.4C48.1 6.3 48 6.4 48 6.7c0 3.5.0 13.1.0 28.8C47.9 47.2 48 56.8 48.1 64.1z"/></g><g><path d="M116.6 51.3h-29c-.5.0-.9-.1-1.3-.2-.4-.2-.7-.4-1-.7-.3-.3-.5-.6-.7-1s-.2-.8-.2-1.3V16.3h6.3V45h25.8v6.3z"/><path d="M154.8 51.3h-22.9c-.9.0-1.8-.2-2.9-.5-1-.3-2-.8-2.9-1.5s-1.6-1.6-2.2-2.8c-.6-1.1-.9-2.5-.9-4.2V19.5c0-.4.1-.9.2-1.2.2-.4.4-.7.7-1s.6-.5 1-.7.8-.2 1.3-.2h28.6v6.3h-25.4v19.8c0 .8.2 1.5.7 1.9s1.1.7 1.9.7h22.9v6.2zM151.9 37h-20v-6.4h20V37z"/><path d="M197.3 51.3H191v-8.6h-22.3v8.6h-6.3V33.8c0-2.6.4-4.9 1.3-7.1s2.1-4 3.7-5.5 3.4-2.8 5.5-3.6c2.1-.9 4.5-1.3 7-1.3h14.3c.4.0.9.1 1.2.2.4.2.7.4 1 .7s.5.6.7 1 .2.8.2 1.2V51.3zM168.7 36.4H191V22.6h-11.2c-.2.0-.6.0-1.2.1s-1.4.2-2.2.4c-.8.2-1.7.6-2.6 1-.9.5-1.8 1.1-2.5 2-.8.8-1.4 1.9-1.9 3.1-.5 1.2-.7 2.8-.7 4.5v2.7z"/><path d="M241.7 28.1c0 1.4-.2 2.7-.5 3.9-.4 1.1-.8 2.1-1.5 3-.6.9-1.3 1.6-2.1 2.2-.8.6-1.6 1.1-2.5 1.5s-1.8.7-2.6.9c-.9.2-1.7.3-2.5.3l13.3 11.5h-9.8l-13.2-11.5h-4.6v-6.3H230c.8-.1 1.5-.2 2.2-.5s1.2-.6 1.7-1.1.9-1 1.1-1.6c.3-.6.4-1.4.4-2.2v-4c0-.4.0-.6-.1-.8s-.2-.3-.3-.4c-.1-.1-.3-.1-.4-.2-.2.0-.3.0-.4.0h-20.9v28.7H207v-32c0-.4.1-.9.2-1.2.2-.4.4-.7.7-1 .3-.3.6-.5 1-.7s.8-.2 1.3-.2H234c1.4.0 2.6.3 3.6.8s1.8 1.2 2.4 1.9c.6.8 1 1.6 1.3 2.5s.4 1.7.4 2.5v4z"/><path d="M285.1 48.6c0 .5-.1.9-.3 1.3s-.4.7-.7 1-.6.5-1 .7-.8.2-1.2.2-.8-.1-1.2-.2-.8-.4-1.1-.7l-23.2-24.2v24.7h-6.3V19c0-.7.2-1.2.5-1.8.4-.5.8-.9 1.4-1.2.6-.2 1.2-.3 1.9-.2s1.2.4 1.6.9l23.2 24.2V16.3h6.3V48.6z"/></g></svg>
+</a>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script type=text/javascript src=/js/lunr.min.js?1642101123></script>
+<script type=text/javascript src=/js/auto-complete.js?1642101123></script>
+<script type=text/javascript>var baseurl="/"</script>
+<script type=text/javascript src=/js/search.js?1642101123></script>
+</div>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/programminglanguages/ title="Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology" class="dd-item
+parent">
+<a href=/programminglanguages/>
+<b>1. </b>Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/programminglanguages/_1_typsicherheit_typisierung/ title="1 Typsicherheit und Typisierung" class=dd-item>
+<a href=/programminglanguages/_1_typsicherheit_typisierung/>
+1 Typsicherheit und Typisierung
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/programminglanguages/_2_frontend_backend/ title="2 Frontend und Backend" class=dd-item>
+<a href=/programminglanguages/_2_frontend_backend/>
+2 Frontend und Backend
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/programminglanguages/_3_verschiedene_websprachen/ title="3 Verschiedene Web-Programmiersprachen" class="dd-item active">
+<a href=/programminglanguages/_3_verschiedene_websprachen/>
+3 Verschiedene Web-Programmiersprachen
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/programminglanguages/_4_html_css/ title="4 HTML und CSS" class=dd-item>
+<a href=/programminglanguages/_4_html_css/>
+4 HTML und CSS
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/programminglanguages/_5_vergleich_tabellenform/ title="5 Vergleich in Tabellenform" class=dd-item>
+<a href=/programminglanguages/_5_vergleich_tabellenform/>
+5 Vergleich in Tabellenform
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/programminglanguages/_6_fazit/ title="6 Fazit" class=dd-item>
+<a href=/programminglanguages/_6_fazit/>
+6 Fazit
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/programminglanguages/_7_literaturverzeichnis/ title="7 Literaturverzeichnis" class=dd-item>
+<a href=/programminglanguages/_7_literaturverzeichnis/>
+7 Literaturverzeichnis
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/basics/ title=Basics class=dd-item>
+<a href=/basics/>
+<b>lt-1. </b>Basics
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/basics/requirements/ title=Requirements class=dd-item>
+<a href=/basics/requirements/>
+Requirements
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/basics/installation/ title=Installation class=dd-item>
+<a href=/basics/installation/>
+Installation
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/basics/configuration/ title=Configuration class=dd-item>
+<a href=/basics/configuration/>
+Configuration
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/basics/style-customization/ title="Style customization" class=dd-item>
+<a href=/basics/style-customization/>
+Style customization
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/cont/ title=Content class=dd-item>
+<a href=/cont/>
+<b>lt-2. </b>Content
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/cont/pages/ title="Pages organization" class=dd-item>
+<a href=/cont/pages/>
+Pages organization
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/archetypes/ title=Archetypes class=dd-item>
+<a href=/cont/archetypes/>
+Archetypes
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/markdown/ title="Markdown syntax" class=dd-item>
+<a href=/cont/markdown/>
+Markdown syntax
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/syntaxhighlight/ title="Code highlighting" class=dd-item>
+<a href=/cont/syntaxhighlight/>
+Code highlighting
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/menushortcuts/ title="Menu extra shortcuts" class=dd-item>
+<a href=/cont/menushortcuts/>
+Menu extra shortcuts
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/icons/ title="Icons and logos" class=dd-item>
+<a href=/cont/icons/>
+Icons and logos
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/i18n/ title="Multilingual and i18n" class=dd-item>
+<a href=/cont/i18n/>
+Multilingual and i18n
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/cont/tags/ title=Tags class=dd-item>
+<a href=/cont/tags/>
+Tags
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/shortcodes/ title=Shortcodes class=dd-item>
+<a href=/shortcodes/>
+<b>lt-3. </b>Shortcodes
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/attachments/ title=Attachments class=dd-item>
+<a href=/shortcodes/attachments/>
+Attachments
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/button/ title=Button class=dd-item>
+<a href=/shortcodes/button/>
+Button
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/children/ title=Children class=dd-item>
+<a href=/shortcodes/children/>
+Children
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/children/children-1/ title="page 1" class=dd-item>
+<a href=/shortcodes/children/children-1/>
+page 1
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/children/children-1/children-1-1/ title="page 1-1" class=dd-item>
+<a href=/shortcodes/children/children-1/children-1-1/>
+page 1-1
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/children/children-1/children-1-1/children-1-1-1/ title="page 1-1-1" class=dd-item>
+<a href=/shortcodes/children/children-1/children-1-1/children-1-1-1/>
+page 1-1-1
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/ title="page 1-1-1-1" class=dd-item>
+<a href=/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/>
+page 1-1-1-1
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/ title="page 1-1-1-1-1" class=dd-item>
+<a href=/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/>
+page 1-1-1-1-1
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-nav-id=/shortcodes/children/children-2/ title="page 2" class=dd-item>
+<a href=/shortcodes/children/children-2/>
+page 2
+<i class="fas fa-check read-icon"></i>
+</a>
+<ul>
+<li data-nav-id=/shortcodes/children/children-2/test3/ title="page test 3" class=dd-item>
+<a href=/shortcodes/children/children-2/test3/>
+page test 3
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/shortcodes/children/children-3/ title="page 3" class=dd-item>
+<a href=/shortcodes/children/children-3/>
+page 3
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/children/test/ title="page test" class=dd-item>
+<a href=/shortcodes/children/test/>
+page test
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+<li data-nav-id=/shortcodes/expand/ title=Expand class=dd-item>
+<a href=/shortcodes/expand/>
+Expand
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/mermaid/ title=Mermaid class=dd-item>
+<a href=/shortcodes/mermaid/>
+Mermaid
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/notice/ title=Notice class=dd-item>
+<a href=/shortcodes/notice/>
+Notice
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/siteparam/ title="Site param" class=dd-item>
+<a href=/shortcodes/siteparam/>
+Site param
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+<li data-nav-id=/shortcodes/tabs/ title="Tabbed views" class=dd-item>
+<a href=/shortcodes/tabs/>
+Tabbed views
+<i class="fas fa-check read-icon"></i>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<section id=shortcuts>
+<h3>More</h3>
+<ul>
+<li>
+<a class=padding href=https://github.com/htw-imi-wt1-ws2021><i class="fab fa-fw fa-github"></i> GitHub repo</a>
+</li>
+<li>
+<a class=padding href=/credits><i class="fas fa-fw fa-bullhorn"></i> Credits</a>
+</li>
+</ul>
+</section>
+<section id=prefooter>
+<hr>
+<ul>
+<li><a class=padding href=# data-clear-history-toggle><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+</ul>
+</section>
+<section id=footer>
+<center>
+<a class=github-button href=https://github.com/matcornic/hugo-theme-learn/archive/master.zip data-icon=octicon-cloud-download aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+<a class=github-button href=https://github.com/matcornic/hugo-theme-learn data-icon=octicon-star data-show-count=true aria-label="Star matcornic/hugo-theme-learn on GitHub">Star</a>
+<a class=github-button href=https://github.com/matcornic/hugo-theme-learn/fork data-icon=octicon-repo-forked data-show-count=true aria-label="Fork matcornic/hugo-theme-learn on GitHub">Fork</a>
+<p>Built with <a href=https://github.com/matcornic/hugo-theme-learn><i class="fas fa-heart"></i></a> from <a href=https://getgrav.org>Grav</a> and <a href=https://gohugo.io/>Hugo</a></p>
+</center>
+<script async defer src=https://buttons.github.io/buttons.js></script>
+</section>
+</div>
+</nav>
+<section id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/programmingLanguages/_3_verschiedene_websprachen.md target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/>Learn Theme for Hugo</a> > <a href=/programminglanguages/>Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology</a> > 3 Verschiedene Web-Programmiersprachen
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id=head-tags>
+<div class=tags>
+<a class=tag-link href=/tags/chapter1>chapter1</a>
+<a class=tag-link href=/tags/javascript>javascript</a>
+<a class=tag-link href=/tags/typescript>typescript</a>
+<a class=tag-link href=/tags/python>python</a>
+<a class=tag-link href=/tags/php>php</a>
+<a class=tag-link href=/tags/ruby>ruby</a>
+</div>
+</div>
+<div id=body-inner>
+<h1>
+3 Verschiedene Web-Programmiersprachen
+</h1>
+<h4 id=31-web-programmiersprachen>3.1 Web-Programmiersprachen</h4>
+<p>Mittlerweile gibt es eine große Menge an verschiedenen Programmiersprachen. Jede Programmiersprache hat ihre Vorteile und Nachteile gegenüber einer anderen. Doch welche Programmiersprachen eignen sich für die Webentwicklung am besten? Gibt es überhaupt die eine Web-Programmiersprache?</p>
+<p>Mit Web-Programmiersprachen können komplexe logische Anweisungen und Prozesse definiert werden. Jede Programmiersprache hat wie die verschiedenen Sprachfamilien auch ihre Eigenarten. In den folgenden Kapiteln werden die bekanntesten Vertreter der Web-Programmiersprachen kompakt vorgestellt.</p>
+<h4 id=311-javascript>3.1.1 JavaScript</h4>
+<p>Bekannt ist JavaScript als prototypbasierte Skriptsprache für Webseiten. Jedoch wird diese <em>lightweight</em> Sprache auch in anderen Umgebungen eingesetzt, wie beispielsweise Node.js oder <em>Apache</em>. Was bedeutet lightweight im Zusammenhang mit einer Programmiersprache? Lightweight Sprachen sind so designt, dass sie einen kleinen <em>Memory-Footprint</em> besitzen, einfach in verschiedenen Systemen zu implementieren sind und sie eine minimalistische Syntax aufweisen.</p>
+<p>JavaScript trägt zwar den Namen der objektorientierten Programmiersprache Java, doch wurden beide Sprachen in den frühen 90er-Jahren unabhängig voneinander entwickelt mit völlig unterschiedlichen Grundkonzepten.</p>
+<p>Je nach Bedarf lässt sich in JavaScript objektorientiert, prozedural oder funktional programmieren. Dies ist möglich durch den standardisierten Sprachkern <em>ECMAScript</em>. Dieser beschreibt eine dynamisch typisierte, objektorientierte, aber klassenlose Sprache.</p>
+<p><strong>Objektorientierte Programmierung</strong></p>
+<p>Obwohl JavaScript dank seines Sprachkerns objektorientierte Programmierparadigmen beinhaltet, kann es nicht als objektorientierte Programmiersprache angesehen werden. JavaScript unterstützt Grundelemente der Objektorientierung wie beispielsweise Datenkapselung, Polymorphie und Vererbung. Doch das wesentlichste Konzept <strong>Klassen</strong> bietet sie nicht. Mit ECMAScript 6 (kurz ES6) wurde jedoch das Schlüsselwort <em>class</em> eingeführt, mit dem es möglich ist, nun pseudo Klassen zu definieren. Doch sind diese nichts weiter als Funktionen - anstatt <em>function</em> ist es nun möglich, class zu verwenden.</p>
+<p><strong>Prototyp</strong></p>
+<p>Jedes Objekt in JavaScript verfügt über die Eigenschaft <em>prototype</em>. Mit diesem Muster beziehungsweise Bauplan werden Objekte erzeugt. Anders als in objektorientierten und klassenbasierten Sprachen, wo Klassen das Muster für Objekte sind.</p>
+<p>Prototypen unterscheiden sich von Klassen dahingehend, dass auf Objekten eines Prototyps beliebige Operationen ausgeführt werden können. Das geht bei Klassen nicht. Ein weiterer Unterschied ist, wenn aus einer Klasse ein Objekt gebildet wird, entsteht eine Instanz. Bei Objekten eines Prototypen referenziert das erzeugte Objekt auf den Prototypen. Auch ist es möglich, das Objekte eines Prototyps nachträglich mit Eigenschaften und Methoden ergänzt werden können. Das geht bei Klassen auch nicht.</p>
+<p><strong>Typisierung</strong></p>
+<p>JavaScript ist ein Vertreter der dynamischen Typisierung. Das bedeutet, dass die Typprüfung erst zur Laufzeit passiert - beispielsweise die Prüfung des Datentyps einer Variable.</p>
+<p><strong>Typsicherheit</strong></p>
+<p>In Sachen Typsicherheit nimmt es JavaScript nicht allzu ernst. In großen Projekten ist JavaScript bezüglich der dynamischen Typsicherheit nicht einfach zu handhaben, da Typen schlichtweg nicht angegeben werden müssen.</p>
+<p><strong>Frontend</strong></p>
+<p>JavaScript zählt wohl mit zu den beliebtesten Programmiersprachen überhaupt und die Sprache unterstützt wohl die meisten Frameworks und Bibliotheken, die es für den Frontend-Bereich gibt. JavaScript ist überaus beliebt und dynamisch und unterstützt unter anderem folgende Frontend-Frameworks und Bibliotheken: Angular, React, <em>Vue.js</em>, <em>Ember.js</em>, <em>Aurelia</em>, und noch viele mehr!</p>
+<p><strong>Backend</strong></p>
+<p>Wie beim Frontend, zählt JavaScript auch beim Backend zu den beliebtesten Programmiersprachen überhaupt. JavaScript unterstützt auch im Bereich Backend eine vielzahl von verschiedenen Frameworks und Bibliotheken: Node.js, <em>Next.js</em>, <em>Express.js</em>, <em>Meteor</em>, und mehr.</p>
+<h4 id=312-typescript>3.1.2 TypeScript</h4>
+<p>Einer der häufigsten auftretenden Fehler bei der Programmierung mit JavaScript sind Typfehler. Da Typen bei JavaScript nicht angegeben werden müssen, passiert es häufig, das ein anderer Typ übergeben wird, als erwartet und dadurch zahlreiche Fehler entstehen können. Das Ziel von TypeScript ist ein statischer <em>Type Checker</em> für JavaScript Programme darzustellen. Bevor das Programm ausgeführt wird, wird überprüft, ob die Typen im Programm korrekt sind. Typescript bietet dabei alle JavaScript Funktionalitäten und zusätzlich dazu ein eigenes Typsystem. JavaScript bietet beispielsweise primitive Datentypen wie <em>string</em> oder <em>number</em>, überprüft jedoch nicht, ob diese auch konsistent zugewiesen werden. TypeScript tut das.</p>
+<p><strong>Objektorientierte Programmierung</strong></p>
+<p>Die objektorientierte Programmierung mit TypeScript erfolgt nach den gleichen Prinzipien wie in JavaScript. TypeScript unterstützt auch dabei auch JavaScript-”Klassen”. Des Weiteren werden weitere typische Pattern wie die Implementierung von Interfaces, Vererbung und statische Methoden unterstützt.</p>
+<p><strong>Typisierung</strong></p>
+<p>TypeScript ist mit seinem statischen Typsystem ein Vertreter der statischen Typisierung. Die Verwendung dieses ist jedoch optional, weshalb auch das Schreiben von dynamisch typisierten Code möglich ist.</p>
+<p><strong>Typsicherheit</strong></p>
+<p>TypeScript verbessert die Typsicherheit von JavaScript-Programmen, beispielsweise dadurch, das nun Typen angegeben werden müssen. Allerdings ist auch die Typsicherheit von TypeScript noch ausbaufähig, weshalb im Jahr 2014 das Projekt: <strong>Safer TypeScript</strong> von <em>Microsoft Research</em> entwickelt und im Juli desselben Jahres veröffentlicht wurde. Hierbei soll die Typsicherheit durch eine Kombination von statischer und dynamischer Überprüfungen gewährleistet werden.</p>
+<p><strong>Frontend</strong></p>
+<p>TypeScript ist mittlerweile eine überaus beliebte Programmiersprache im Bereich Frontend-Entwicklung. Laut einem Bericht von <strong>State of Frontend</strong> aus dem Jahr 2020, haben 94% der befragten Frontend-Entwickler angegeben, dass sie am liebsten mit TypeScript entwickeln. Weitere Ergebnisse des Berichts sind auf der entsprechenden Webseite nachzulesen: <a href=https://tsh.io/state-of-frontend/>https://tsh.io/state-of-frontend/</a></p>
+<p><strong>Backend</strong></p>
+<p>Seit Node.js es ermöglicht auch mit JavaScript im Backend-Bereich zu entwickeln, gewinnt auch TypeScript an Beliebtheit bei der Backend-Entwicklung. Besonders dadurch, das TypeScript sowohl im Backend als auch im Frontend verwendet werden kann, sorgt dies für eine positive Entwicklererfahrung, da nun nicht mehr zwischen verschiedenen Programmiersprachen gewechselt werden muss.</p>
+<h4 id=313-python>3.1.3 Python</h4>
+<p>Python ist eine zu interpretierende und interaktive Programmiersprache. Ein Ziel der Programmiersprache Python ist eine sehr einfache und übersichtliche Syntax. Wodurch auch Nicht-Programmierern der Einstieg in die Sprache leicht fallen soll. Python verfügt unter anderem über Module, Klassen, <em>Exceptions</em> und <em>High-Level</em> dynamische Datentypen.</p>
+<p><strong>Objektorientierte Programmierung</strong></p>
+<p>Python ist eine höhere und objektorientierte Programmiersprache. Mit dem Schlüsselwort class können Klassen definiert werden, welche Attribute und Methoden beinhalten.</p>
+<p><strong>Typisierung</strong></p>
+<p>Python ist Vertreter der dynamischen Typisierung.</p>
+<p><strong>Typsicherheit</strong></p>
+<p>Seit Version 3.6 sind Typangaben für Variablen bei Python möglich. Vorher erfuhr Python die Typen erst zur Laufzeit und Variablen mussten nicht einem speziellen Typen zugewiesen werden. Die sogenannten <strong>Type Hints</strong> in Python 3.6 fügen Variablen oder anderen Programmobjekten Typinformationen hinzu. So kann nun auch der Rückgabewert einer Funktion vordefiniert werden. Durch die dynamische Typisierung und den Type Hints bietet Python eine hohe Typsicherheit.</p>
+<p><strong>Frontend</strong></p>
+<p>Es ist möglich, Python im Frontend zu nutzen. Dies wird jedoch nicht gängige Praxis, da meist JavaScript, sowie ihre Bibliotheken benötigt werden. Außerdem muss Python-Code vorher geparst und ausgeführt werden.</p>
+<p><strong>Backend</strong></p>
+<p>Als Backend-Programmiersprache ist Python im Vergleich zum Frontend wesentlich beliebter. Einer der Gründe dafür ist die einfache Lesbarkeit von Python. Des Weiteren unterstützen zahlreiche Web-Frameworks mittlerweile Python, dazu zählen beispielsweise Django oder Flask.</p>
+<h4 id=314-php>3.1.4 PHP</h4>
+<p>Ist die Rede von Web-Programmiersprachen, so spielt die Skriptsprache PHP eine überaus große Rolle. PHP ist die mit Abstand am häufigsten serverseitig verwendete Programmiersprache zur Erstellung von Webseiten. Die Syntax von PHP ist angelehnt an den Programmiersprachen <em>C</em> und <em>Perl</em>. Anders als beispielsweise bei JavaScript, ist PHP eine serverseitig interpretierte Skriptsprache, mit der es möglich ist, Webseiten dynamisch zu erzeugen, sowie Daten aus Benutzereingaben und Datenbanken zu verarbeiten.</p>
+<p>Bei serverseitigem Code wird der Quelltext nicht direkt an den Webbrowser übermittelt, sondern an einen Interpreter auf dem Webserver. Der PHP-Interpreter schickt die Ausgabe an den Browser - ein HTML-Dokument.</p>
+<p><strong>Warum PHP und nicht rein HTML?</strong></p>
+<p>HTML oder HTML-Dateien sind rein statisch. Zum Beispiel: Bei der Erstellung einer Tabelle mit einer bestimmten Anzahl an Einträgen kann nur diese bestimmte Anzahl angezeigt werden. Mit PHP ist das flexibel beziehungsweise dynamisch möglich. Theoretisch alles, was auf einer Webseite dynamisch angezeigt werden soll, ist mit PHP möglich - beispielsweise ein Besuchercounter oder Einträge in einem Gästebuch.</p>
+<p><strong>Objektorientierte Programmierung</strong></p>
+<p>In PHP ist die objektorientierte Programmierung möglich. Dadurch wird PHP-Code leichter wartbar und ist einfacher wiederverwendbar.</p>
+<p><strong>Typisierung</strong></p>
+<p>Wie bei vielen anderen Skriptsprachen auch, ist PHP ein Vertreter der dynamischen Typisierung beziehungsweise PHP ist schwach typisiert. Das bedeutet, dass die Typprüfung erst zur Laufzeit passiert - beispielsweise die Prüfung des Datentyps einer Variable.</p>
+<p><strong>Typsicherheit</strong></p>
+<p>PHP ist eine schwach typisierte Programmiersprache und somit ist es nicht möglich, typsicher zu deklarieren. Jedoch gibt es bei PHP das <strong>Type Hinting</strong> mit dem es Funktionen ermöglicht, spezifische Parameter zu erzwingen.</p>
+<p>Frontend und Backend
+PHP unterstützt unter anderem folgende Frameworks: Symfony, <em>Laravel</em>, <em>CodeIgniter</em>, <em>CakePHP</em> oder <em>Phalcon</em>.</p>
+<h4 id=315-ruby>3.1.5 Ruby</h4>
+<p>Ruby ist eine dynamische Programmiersprache, sie sich produktiv einsetzen lässt. Sie zeichnet sich aus durch eine elegante und leicht zu lesende und schreibende Syntax. Ruby ist eine objektorientierte Programmiersprache, unterstützt aber weitere Programmierparadigmen, wie prozedurale und funktionale Programmierung. Die wohl größte Verbreitung findet Ruby im Einsatz als Webserver-Skriptsprache.</p>
+<p><strong>Objektorientierte Programmierung</strong></p>
+<p>Ruby ist von Grund auf objektorientiert, was bedeutet, dass in Ruby ausnahmslos jeder Wert ein Objekt und jede Funktion eine Methode ist. Selbst Klassen sind Objekte. Die Objekte in Ruby sind dynamisch, was bedeutet, dass es auch möglich ist, prototypenbasiert zu programmieren. Damit können Objekte eigene Methoden haben.</p>
+<p><strong>Typisierung</strong></p>
+<p>Ruby ist Vertreter der dynamischen Typisierung und ist somit schwach typisiert.</p>
+<p><strong>Typsicherheit</strong></p>
+<p>Wie bei anderen Vertretern der dynamischen Typisierung auch ist es bei Ruby nicht möglich, typsicher zu deklarieren.</p>
+<p><strong>Frontend</strong></p>
+<p>Ruby wird teilweise auch für den Frontend-Bereich eingesetzt. Dennoch wird Ruby mehr als Backend-Programmiersprache gesehen als Frontend. Um Ruby im Frontend einzusetzen, muss Ruby-Quellcode in JavaScript-Code umgewandelt werden. Mit <em>Ruby2JS</em>, einer Ruby Erweiterung können Entwickler in Ruby-Code schreiben und den Code dann in JavaScript-Code umwandeln lassen.</p>
+<p><strong>Backend</strong></p>
+<p>Ruby ist eine überaus beliebte Programmiersprache für den Backend-Bereich. Das wohl bekannteste Backend-Framework für Ruby ist Ruby on Rails. Das beliebteste Feature von <em>Ruby on Rails</em> ist die Model-View-Controller-Architektur (kurz <em>MVC</em>). Dadurch ermöglicht das Framework, alle Code-Vorgänge separat durchzuführen. Neben Ruby on Rails gibt es noch weitere Backend-Frameworks wie: <em>Sinatra</em>, <em>Roda</em> oder auch <em>Camping</em>.</p>
+<footer class=footline>
+</footer>
+</div>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=/programminglanguages/_2_frontend_backend/ title="2 Frontend und Backend"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/programminglanguages/_4_html_css/ title="4 HTML und CSS" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+</div>
+</section>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/js/clipboard.min.js?1642101123></script>
+<script src=/js/perfect-scrollbar.min.js?1642101123></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1642101123></script>
+<script src=/js/jquery.sticky.js?1642101123></script>
+<script src=/js/featherlight.min.js?1642101123></script>
+<script src=/js/highlight.pack.js?1642101123></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script src=/js/modernizr.custom-3.6.0.js?1642101123></script>
+<script src=/js/learn.js?1642101123></script>
+<script src=/js/hugo-learn.js?1642101123></script>
+<script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-105947713-1','auto'),ga('send','pageview')</script>
+</body>
+</html>

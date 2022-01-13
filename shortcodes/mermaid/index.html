@@ -3,10 +3,10 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=generator content="Hugo 0.92.0">
-<meta name=description content="Documentation for Hugo Learn Theme">
+<meta name=description content="Generation of diagram and flowchart from text in a similar manner as markdown">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>Learn Theme for Hugo :: Documentation for Hugo Learn Theme</title>
+<title>Mermaid :: Documentation for Hugo Learn Theme</title>
 <link href=/css/nucleus.css?1642101123 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642101123 rel=stylesheet>
 <link href=/css/hybrid.css?1642101123 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642101123></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/>
+<body data-url=/shortcodes/mermaid/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -177,7 +177,8 @@ Tags
 </li>
 </ul>
 </li>
-<li data-nav-id=/shortcodes/ title=Shortcodes class=dd-item>
+<li data-nav-id=/shortcodes/ title=Shortcodes class="dd-item
+parent">
 <a href=/shortcodes/>
 <b>lt-3. </b>Shortcodes
 <i class="fas fa-check read-icon"></i>
@@ -273,7 +274,7 @@ Expand
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/shortcodes/mermaid/ title=Mermaid class=dd-item>
+<li data-nav-id=/shortcodes/mermaid/ title=Mermaid class="dd-item active">
 <a href=/shortcodes/mermaid/>
 Mermaid
 <i class="fas fa-check read-icon"></i>
@@ -331,18 +332,239 @@ Tabbed views
 <section id=body>
 <div id=overlay></div>
 <div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/shortcodes/mermaid.en.md target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/>Learn Theme for Hugo</a> > <a href=/shortcodes/>Shortcodes</a> > Mermaid
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#flowchart-example>Flowchart example</a></li>
+<li><a href=#sequence-example>Sequence example</a></li>
+<li><a href=#gantt-example>GANTT Example</a>
+<ul>
+<li><a href=#class-example>Class example</a></li>
+<li><a href=#git-example>Git example</a></li>
+<li><a href=#state-diagrams>State Diagrams</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
 <div id=head-tags>
 </div>
 <div id=body-inner>
-<span id=sidebar-toggle-span>
-<a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i> navigation</a>
-</span>
-<h1 id=wt1---web-applications--wise202122>WT1 - Web Applications | WiSe2021/22</h1>
-<p>Lorem Ipsum</p>
+<h1>
+Mermaid
+</h1>
+<p><a href=https://mermaidjs.github.io/>Mermaid</a> is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.</p>
+<p>Just insert your mermaid code in the <code>mermaid</code> shortcode and that&rsquo;s it.</p>
+<h2 id=flowchart-example>Flowchart example</h2>
+<pre><code>{{&lt;mermaid align=&quot;left&quot;&gt;}}
+graph LR;
+    A[Hard edge] --&gt;|Link text| B(Round edge)
+    B --&gt; C{Decision}
+    C --&gt;|One| D[Result one]
+    C --&gt;|Two| E[Result two]
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+<div class=mermaid align=left>
+graph LR;
+A[Hard edge] -->|Link text| B(Round edge)
+B --> C{Decision}
+C -->|One| D[Result one]
+C -->|Two| E[Result two]
+</div>
+<h2 id=sequence-example>Sequence example</h2>
+<pre><code>{{&lt; mermaid &gt;}}
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice-&gt;&gt;John: Hello John, how are you?
+    loop Healthcheck
+        John-&gt;John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts &lt;br/&gt;prevail...
+    John--&gt;Alice: Great!
+    John-&gt;Bob: How about you?
+    Bob--&gt;John: Jolly good!
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+<div class=mermaid align=center>
+sequenceDiagram
+participant Alice
+participant Bob
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+John->John: Fight against hypochondria
+end
+Note right of John: Rational thoughts <br>prevail...
+John-->Alice: Great!
+John->Bob: How about you?
+Bob-->John: Jolly good!
+</div>
+<h2 id=gantt-example>GANTT Example</h2>
+<pre><code>{{&lt; mermaid &gt;}}
+gantt
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+<div class=mermaid align=center>
+gantt
+dateFormat YYYY-MM-DD
+title Adding GANTT diagram functionality to mermaid
+section A section
+Completed task :done, des1, 2014-01-06,2014-01-08
+Active task :active, des2, 2014-01-09, 3d
+Future task : des3, after des2, 5d
+Future task2 : des4, after des3, 5d
+section Critical tasks
+Completed task in the critical line :crit, done, 2014-01-06,24h
+Implement parser and jison :crit, done, after des1, 2d
+Create tests for parser :crit, active, 3d
+Future task in critical line :crit, 5d
+Create tests for renderer :2d
+Add to mermaid :1d
+</div>
+<h3 id=class-example>Class example</h3>
+<pre><code>{{&lt; mermaid &gt;}}
+classDiagram
+  Class01 &lt;|-- AveryLongClass : Cool
+  Class03 *-- Class04
+  Class05 o-- Class06
+  Class07 .. Class08
+  Class09 --&gt; C2 : Where am i?
+  Class09 --* C3
+  Class09 --|&gt; Class07
+  Class07 : equals()
+  Class07 : Object[] elementData
+  Class01 : size()
+  Class01 : int chimp
+  Class01 : int gorilla
+  Class08 &lt;--&gt; C2: Cool label
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+<div class=mermaid align=center>
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+</div>
+<h3 id=git-example>Git example</h3>
+<pre><code>{{&lt; mermaid &gt;}}
+gitGraph:
+options
+{
+  &quot;nodeSpacing&quot;: 150,
+  &quot;nodeRadius&quot;: 10
+}
+end
+  commit
+  branch newbranch
+  checkout newbranch
+  commit
+  commit
+  checkout master
+  commit
+  commit
+  merge newbranch
+{{&lt; /mermaid&gt;}}
+</code></pre>
+<p>renders as</p>
+<div class=mermaid align=center>
+gitGraph:
+options
+{
+"nodeSpacing": 150,
+"nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+</div>
+<h3 id=state-diagrams>State Diagrams</h3>
+<pre><code>{{&lt; mermaid &gt;}}
+stateDiagram-v2
+  open: Open Door
+  closed: Closed Door
+  locked: Locked Door
+  open   --&gt; closed: Close
+  closed --&gt; locked: Lock
+  locked --&gt; closed: Unlock
+  closed --&gt; open: Open
+{{&lt; /mermaid &gt;}}
+</code></pre>
+<p>renders as</p>
+<div class=mermaid align=center>
+stateDiagram-v2
+open: Open Door
+closed: Closed Door
+locked: Locked Door
+open --> closed: Close
+closed --> locked: Lock
+locked --> closed: Unlock
+closed --> open: Open
+</div>
+<footer class=footline>
+</footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/programminglanguages/ title="Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/shortcodes/expand/ title=Expand> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/shortcodes/notice/ title=Notice style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

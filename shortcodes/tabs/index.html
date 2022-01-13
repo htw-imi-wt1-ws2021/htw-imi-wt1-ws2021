@@ -3,10 +3,10 @@
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=generator content="Hugo 0.92.0">
-<meta name=description content="Documentation for Hugo Learn Theme">
+<meta name=description content="Synchronize selection of content in different tabbed views">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>Learn Theme for Hugo :: Documentation for Hugo Learn Theme</title>
+<title>Tabbed views :: Documentation for Hugo Learn Theme</title>
 <link href=/css/nucleus.css?1642101123 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642101123 rel=stylesheet>
 <link href=/css/hybrid.css?1642101123 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642101123></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/>
+<body data-url=/shortcodes/tabs/>
 <nav id=sidebar class=showVisitedLinks>
 <div id=header-wrapper>
 <div id=header>
@@ -177,7 +177,8 @@ Tags
 </li>
 </ul>
 </li>
-<li data-nav-id=/shortcodes/ title=Shortcodes class=dd-item>
+<li data-nav-id=/shortcodes/ title=Shortcodes class="dd-item
+parent">
 <a href=/shortcodes/>
 <b>lt-3. </b>Shortcodes
 <i class="fas fa-check read-icon"></i>
@@ -291,7 +292,7 @@ Site param
 <i class="fas fa-check read-icon"></i>
 </a>
 </li>
-<li data-nav-id=/shortcodes/tabs/ title="Tabbed views" class=dd-item>
+<li data-nav-id=/shortcodes/tabs/ title="Tabbed views" class="dd-item active">
 <a href=/shortcodes/tabs/>
 Tabbed views
 <i class="fas fa-check read-icon"></i>
@@ -331,18 +332,166 @@ Tabbed views
 <section id=body>
 <div id=overlay></div>
 <div class="padding highlightable">
+<div>
+<div id=top-bar>
+<div id=top-github-link>
+<a class=github-link title="Edit this page" href=https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/shortcodes/tabs.en.md target=blank>
+<i class="fas fa-code-branch"></i>
+<span id=top-github-link-text>Edit this page</span>
+</a>
+</div>
+<div id=breadcrumbs itemscope itemtype=http://data-vocabulary.org/Breadcrumb>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<span class=links>
+<a href=/>Learn Theme for Hugo</a> > <a href=/shortcodes/>Shortcodes</a> > Tabbed views
+</span>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#code-example>Code example</a></li>
+<li><a href=#config-example>Config example</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
 <div id=head-tags>
 </div>
 <div id=body-inner>
-<span id=sidebar-toggle-span>
-<a href=# id=sidebar-toggle data-sidebar-toggle><i class="fas fa-bars"></i> navigation</a>
-</span>
-<h1 id=wt1---web-applications--wise202122>WT1 - Web Applications | WiSe2021/22</h1>
-<p>Lorem Ipsum</p>
+<h1>
+Tabbed views
+</h1>
+<p>Choose which content to see across the page. Very handy for providing code
+snippets for multiple languages or providing configuration in different formats.</p>
+<h2 id=code-example>Code example</h2>
+<pre><code>{{&lt; tabs &gt;}}
+{{% tab name=&quot;python&quot; %}}
+```python
+print(&quot;Hello World!&quot;)
+```
+{{% /tab %}}
+{{% tab name=&quot;R&quot; %}}
+```R
+&gt; print(&quot;Hello World!&quot;)
+```
+{{% /tab %}}
+{{% tab name=&quot;Bash&quot; %}}
+```Bash
+echo &quot;Hello World!&quot;
+```
+{{% /tab %}}
+{{&lt; /tabs &gt;}}
+</code></pre>
+<p>Renders as:</p>
+<div class=tab-panel>
+<div class=tab-nav>
+<button data-tab-item=python data-tab-group=default class="tab-nav-button btn active" onclick="switchTab('default','python')">python</button>
+<button data-tab-item=R data-tab-group=default class="tab-nav-button btn" onclick="switchTab('default','R')">R</button>
+<button data-tab-item=Bash data-tab-group=default class="tab-nav-button btn" onclick="switchTab('default','Bash')">Bash</button>
+</div>
+<div class=tab-content>
+<div data-tab-item=python data-tab-group=default class="tab-item active">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>print(<span style=color:#e6db74>&#34;Hello World!&#34;</span>)
+</code></pre></div>
+</div>
+<div data-tab-item=R data-tab-group=default class=tab-item>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-R data-lang=R><span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>print</span>(<span style=color:#e6db74>&#34;Hello World!&#34;</span>)
+</code></pre></div>
+</div>
+<div data-tab-item=Bash data-tab-group=default class=tab-item>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Bash data-lang=Bash>echo <span style=color:#e6db74>&#34;Hello World!&#34;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<p>Tab views with the same tabs that belong to the same group sychronize their selection:</p>
+<div class=tab-panel>
+<div class=tab-nav>
+<button data-tab-item=python data-tab-group=default class="tab-nav-button btn active" onclick="switchTab('default','python')">python</button>
+<button data-tab-item=R data-tab-group=default class="tab-nav-button btn" onclick="switchTab('default','R')">R</button>
+<button data-tab-item=Bash data-tab-group=default class="tab-nav-button btn" onclick="switchTab('default','Bash')">Bash</button>
+</div>
+<div class=tab-content>
+<div data-tab-item=python data-tab-group=default class="tab-item active">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>print(<span style=color:#e6db74>&#34;Hello World!&#34;</span>)
+</code></pre></div>
+</div>
+<div data-tab-item=R data-tab-group=default class=tab-item>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-R data-lang=R><span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>print</span>(<span style=color:#e6db74>&#34;Hello World!&#34;</span>)
+</code></pre></div>
+</div>
+<div data-tab-item=Bash data-tab-group=default class=tab-item>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-Bash data-lang=Bash>echo <span style=color:#e6db74>&#34;Hello World!&#34;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id=config-example>Config example</h2>
+<pre><code>{{&lt; tabs groupId=&quot;config&quot; &gt;}}
+{{% tab name=&quot;json&quot; %}}
+```json
+{
+  &quot;Hello&quot;: &quot;World&quot;
+}
+```
+{{% /tab %}}
+{{% tab name=&quot;XML&quot; %}}
+```xml
+&lt;Hello&gt;World&lt;/Hello&gt;
+```
+{{% /tab %}}
+{{% tab name=&quot;properties&quot; %}}
+```properties
+Hello = World
+```
+{{% /tab %}}
+{{&lt; /tabs &gt;}}
+</code></pre>
+<p>Renders as:</p>
+<div class=tab-panel>
+<div class=tab-nav>
+<button data-tab-item=json data-tab-group=config class="tab-nav-button btn active" onclick="switchTab('config','json')">json</button>
+<button data-tab-item=XML data-tab-group=config class="tab-nav-button btn" onclick="switchTab('config','XML')">XML</button>
+<button data-tab-item=properties data-tab-group=config class="tab-nav-button btn" onclick="switchTab('config','properties')">properties</button>
+</div>
+<div class=tab-content>
+<div data-tab-item=json data-tab-group=config class="tab-item active">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;Hello&#34;</span>: <span style=color:#e6db74>&#34;World&#34;</span>
+}
+</code></pre></div>
+</div>
+<div data-tab-item=XML data-tab-group=config class=tab-item>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-xml data-lang=xml><span style=color:#f92672>&lt;Hello&gt;</span>World<span style=color:#f92672>&lt;/Hello&gt;</span>
+</code></pre></div>
+</div>
+<div data-tab-item=properties data-tab-group=config class=tab-item>
+<pre tabindex=0><code class=language-properties data-lang=properties>Hello = World
+</code></pre>
+</div>
+</div>
+</div>
+<div class="notices warning"><p>When using tab views with different content sets, make sure to use a common <code>groupId</code> for equal sets but distinct
+<code>groupId</code> for different sets. The <code>groupId</code> defaults to <code>'default'</code>.<br>
+<strong>Take this into account across the whole site!</strong><br>
+The tab selection is restored automatically based on the <code>groupId</code> and if it cannot find a tab item because it came
+from the <code>'default'</code> group on a different page then all tabs will be empty at first.</p>
+</div>
+<footer class=footline>
+</footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/programminglanguages/ title="Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/shortcodes/siteparam/ title="Site param"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/shortcodes/attachments/ title=Attachments style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
