@@ -283,7 +283,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     padding-right: 1rem;
 }
 #sidebar ul li.active > a {
-    background: #fff;
+    background: #F5F5F5;
     color: #777 !important;
     margin-left: -1rem;
     margin-right: -1rem;
