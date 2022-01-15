@@ -1,5 +1,5 @@
 ---
-title: "Learn Theme for Hugo"
+title: "WT1 WEB APPLICATIONS"
 ---
 
 # WT1 - Web Applications | WiSe2021/22
