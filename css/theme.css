@@ -66,7 +66,7 @@ pre {
     color: #ffffff;
 }
 .bg {
-    background: #fff;
+    background: #F5F5F5;
     border: 1px solid #eaeaea;
 }
 b, strong, label, th {
@@ -221,7 +221,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     color: #d9d9d9 !important;
 }
 #sidebar h5.active a {
-    background: #fff;
+    background: #F5F5F5;
     color: #777 !important;
 }
 #sidebar h5.active i {
@@ -495,7 +495,7 @@ div.notices p {
 div.notices p:first-child:before {
     position: absolute;
     top: 2px;
-    color: #fff;
+    color: #F5F5F5;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f06a";
@@ -504,7 +504,7 @@ div.notices p:first-child:before {
 div.notices p:first-child:after {
     position: absolute;
     top: 2px;
-    color: #fff;
+    color: #F5F5F5;
     left: 2rem;
 }
 div.notices.info p {
@@ -570,7 +570,7 @@ section.attachments.orange .attachments-files {
 }
 
 section.attachments.green label {
-    color: #fff;
+    color: #F5F5F5;
     background: rgba(92, 184, 92, 0.8);
 }
 
@@ -579,7 +579,7 @@ section.attachments.green .attachments-files {
 }
 
 section.attachments.blue label {
-    color: #fff;
+    color: #F5F5F5;
     background: #6AB0DE;
 }
 
@@ -588,7 +588,7 @@ section.attachments.blue .attachments-files {
 }
 
 section.attachments.grey label {
-    color: #fff;
+    color: #F5F5F5;
     background: #505d65;
 }
 
@@ -669,7 +669,7 @@ hr {
     float: left;
     clear: both;
     background: #9c6fb6;
-    color: #fff;
+    color: #F5F5F5;
 }
 #body a.anchor-link {
     color: #ccc;
