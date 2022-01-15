@@ -39,7 +39,7 @@
     src: url("../fonts/Work_Sans_500.eot?#iefix") format("embedded-opentype"), url("../fonts/Work_Sans_500.woff") format("woff"), url("../fonts/Work_Sans_500.woff2") format("woff2"), url("../fonts/Work_Sans_500.svg#WorkSans") format("svg"), url("../fonts/Work_Sans_500.ttf") format("truetype");
 }
 body {
-    background: rgb(185, 17, 17);
+    background: #F5F5F5;
     color: #777;
 }
 body #chapter h1 {
@@ -102,10 +102,10 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     box-shadow: inset 0 1px 3px rgba(0,0,0,.06),0 0 5px rgba(0,169,218,.7)
 }
 #header-wrapper {
-    background: #132096;
+    background: #484848;
     color: #fff;
     text-align: center;
-    border-bottom: 4px solid #9c6fb6;
+    border-bottom: 4px solid #181818;
     padding: 1rem;
 }
 #header a {
@@ -121,8 +121,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 .searchbox {
     margin-top: 1rem;
     position: relative;
-    border: 1px solid #915eae;
-    background: #37d622;
+    border: 1px solid #888888;
+    background: #686868;
     border-radius: 4px;
 }
 .searchbox label {
@@ -173,7 +173,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     }
 }
 #sidebar {
-    background-color: #322A38;
+    background-color: #383838;
     position: fixed;
     top: 0;
     width: 300px;
@@ -276,7 +276,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin-top: 9px;
 }
 #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-    background: #251f29;
+    background: #505050;
     margin-left: -1rem;
     margin-right: -1rem;
     padding-left: 1rem;
@@ -988,7 +988,7 @@ td {
     background: #34495E;
 }
 #top-bar {
-    background: #F6F6F6;
+    background: 	#E8E8E8;
     border-radius: 2px;
     padding: 0 1rem;
     height: 0;
