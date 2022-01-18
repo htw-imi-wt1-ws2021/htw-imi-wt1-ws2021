@@ -2,8 +2,9 @@
 title: Webhandbook
 weight: 2
 tags: ["webhandbook"]
-chapter: true
 ---
+
+### Kapitel in alphabetischer Reihenfolge
 
 + [APIS](/webhandbook/apis)
 + [Authentication](/webhandbook/authentication)
