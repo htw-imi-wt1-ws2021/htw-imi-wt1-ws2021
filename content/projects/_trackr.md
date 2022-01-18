@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 #### 1.7 Screenshots vom Projekt
 
-![Unser Screenshot](/images/table.jpg)
+![Unser Screenshot](/images/4_team_trackr/hello.jpg?width=40pc)
 
 #### 1.8 Link zum Sourcecode
 

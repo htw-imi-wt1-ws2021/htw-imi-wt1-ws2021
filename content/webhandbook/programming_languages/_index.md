@@ -4,7 +4,6 @@ tags: ["chapter"]
 chapter: true
 ---
 
-### Chapter 1
 
 # Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology
 

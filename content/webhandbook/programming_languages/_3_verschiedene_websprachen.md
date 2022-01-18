@@ -1,7 +1,7 @@
 ---
 title: 3 Verschiedene Web-Programmiersprachen
 description : "Verschiedene Web-Programmiersprachen"
-tags: ["chapter1", "javascript", "typescript", "python", "php", "ruby"]
+tags: ["javascript", "typescript", "python", "php", "ruby"]
 ---
 
 #### 3.1 Web-Programmiersprachen

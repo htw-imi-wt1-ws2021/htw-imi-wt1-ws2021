@@ -12,7 +12,13 @@ Kurzbeschreibung des Projekts, Kurzbeschreibung des Projekts, Kurzbeschreibung d
 
 #### 1.1 Teammitglieder
 
-Listung der Mitglieder
+**Jördis Liermann - 0576959**
+
+**Nguyen Xuan Bach Do - 0556341**
+
+**Alain Ngoufack Nguefack - 0557214**
+
+**Dominic Engel - 0576863**
 
 #### 1.2 Ausgangslage
 
@@ -38,7 +44,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 #### 1.7 Screenshots vom Projekt
 
-![Unser Screenshot](/images/table.jpg)
+![Unser Screenshot](/images/1_team_mystuff/hello.jpg?width=40pc)
 
 #### 1.8 Link zum Sourcecode
 

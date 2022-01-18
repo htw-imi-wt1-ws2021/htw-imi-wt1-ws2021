@@ -1,7 +1,7 @@
 ---
 title: 1 Typsicherheit und Typisierung
 description : "Typsicherheit und Typisierung"
-tags: ["chapter1", "typsicherheit", "typisierung"]
+tags: ["typsicherheit", "typisierung"]
 ---
 
 #### 1.1 Typsicherheit

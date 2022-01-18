@@ -1,7 +1,7 @@
 ---
 title: 4 HTML und CSS
 description : "HTML und CSS"
-tags: ["chapter1", "html", "css"]
+tags: ["html", "css"]
 ---
 
 Sowohl HTML (__H__ yper __t__ ext __M__ arkup __L__ anguage) als auch CSS (__C__ ascading __S__ tyle __S__ heets) sind keine wirklichen Programmiersprachen.
