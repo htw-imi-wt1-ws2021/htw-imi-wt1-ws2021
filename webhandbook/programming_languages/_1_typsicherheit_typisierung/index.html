@@ -7,17 +7,17 @@
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
 <title>1 Typsicherheit und Typisierung :: Documentation for Hugo Learn Theme</title>
-<link href=/css/nucleus.css?1642519480 rel=stylesheet>
-<link href=/css/fontawesome-all.min.css?1642519480 rel=stylesheet>
-<link href=/css/hybrid.css?1642519480 rel=stylesheet>
-<link href=/css/featherlight.min.css?1642519480 rel=stylesheet>
-<link href=/css/perfect-scrollbar.min.css?1642519480 rel=stylesheet>
-<link href=/css/auto-complete.css?1642519480 rel=stylesheet>
-<link href=/css/atom-one-dark-reasonable.css?1642519480 rel=stylesheet>
-<link href=/css/theme.css?1642519480 rel=stylesheet>
-<link href=/css/tabs.css?1642519480 rel=stylesheet>
-<link href=/css/hugo-theme.css?1642519480 rel=stylesheet>
-<script src=/js/jquery-3.3.1.min.js?1642519480></script>
+<link href=/css/nucleus.css?1642533181 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1642533181 rel=stylesheet>
+<link href=/css/hybrid.css?1642533181 rel=stylesheet>
+<link href=/css/featherlight.min.css?1642533181 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1642533181 rel=stylesheet>
+<link href=/css/auto-complete.css?1642533181 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1642533181 rel=stylesheet>
+<link href=/css/theme.css?1642533181 rel=stylesheet>
+<link href=/css/tabs.css?1642533181 rel=stylesheet>
+<link href=/css/hugo-theme.css?1642533181 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1642533181></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/webhandbook/programming_languages/_1_typsicherheit_typisierung/>
@@ -32,10 +32,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/js/lunr.min.js?1642519480></script>
-<script type=text/javascript src=/js/auto-complete.js?1642519480></script>
+<script type=text/javascript src=/js/lunr.min.js?1642533181></script>
+<script type=text/javascript src=/js/auto-complete.js?1642533181></script>
 <script type=text/javascript>var baseurl="/"</script>
-<script type=text/javascript src=/js/search.js?1642519480></script>
+<script type=text/javascript src=/js/search.js?1642533181></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -238,13 +238,13 @@ Website Rendering
 1 Typsicherheit und Typisierung
 </h1>
 <h4 id=11-typsicherheit>1.1 Typsicherheit</h4>
-<p>Die Typsicherheit sorgt dafür, dass die Code-Qualität gewährleistet wird und sich somit die Zuverlässigkeit des entwickelten Programms erhöht. Es obliegt dem Interpreter beziehungsweise Compiler die Sicherheit durch Typprüfung herzustellen und Typverletzungen aufzufangen. Manche Compiler geben Meldungen aus und in manchen passiert eine automatisierte Typumwandlung, sollte es eine Typverletzung geben. Beispielsweise warnt ein Compiler davor, eine Gleitkommazahl (Float, Double) an eine Ganzzahl-Variable (Integer) zu übergeben. Dennoch müssen bei Zuweisungen die beteiligten Typen nicht notwendigerweise identisch sein, da beispielsweise Ganzzahlen unter Umständen an Gleitkommazahlen-Variablen zugewiesen werden können. Wichtig dabei ist, dass die Datentypen kompatibel zueinander sind.</p>
+<p>Die Typsicherheit sorgt dafür, dass die Code-Qualität gewährleistet wird und sich somit die Zuverlässigkeit des entwickelten Programms erhöht. Es obliegt dem Interpreter beziehungsweise Compiler die Sicherheit durch Typprüfung herzustellen und Typverletzungen aufzufangen. Manche Compiler geben Meldungen aus und in manchen passiert eine automatisierte Typumwandlung, sollte es eine Typverletzung geben. Beispielsweise warnt ein Compiler davor, eine Gleitkommazahl (Float, Double) an eine Ganzzahl-Variable (Integer) zu übergeben. Dennoch müssen bei Zuweisungen die beteiligten Typen nicht notwendigerweise identisch sein, da beispielsweise Ganzzahlen unter Umständen an Gleitkommazahlen-Variablen zugewiesen werden können. Wichtig dabei ist, dass die Datentypen kompatibel zueinander sind [5, 6].</p>
 <h4 id=12-typisierung>1.2 Typisierung</h4>
-<p>Das Ziel der Typisierung ist die Vermeidung von Laufzeitfehlern. Sie dient dazu, dass Objekte wie beispielsweise Variablen oder Funktionen korrekt verwendet werden beziehungsweise sie soll sicherstellen, dass keine Operation ausgeführt werden kann, die syntaktisch oder semantisch fehlerhaft ist. Programmiersprachen, die eine Typisierung aufweisen nennt man entweder <em>stark typisiert</em> oder <em>schwach typisiert</em>. Stark typisierte Programmiersprachen sind beispielsweise <em>C++</em> und <em>Java</em>, während schwach typisierte Sprachen beispielsweise PHP und JavaScript sind. Bei der Typisierung gibt es Typprüfungen, die entweder zur Kompilierzeit oder Laufzeit vorgenommen werden. Man spricht hier entweder von einer statischen Typprüfung oder dynamischen Typprüfung.</p>
+<p>Das Ziel der Typisierung ist die Vermeidung von Laufzeitfehlern. Sie dient dazu, dass Objekte wie beispielsweise Variablen oder Funktionen korrekt verwendet werden beziehungsweise sie soll sicherstellen, dass keine Operation ausgeführt werden kann, die syntaktisch oder semantisch fehlerhaft ist. Programmiersprachen, die eine Typisierung aufweisen nennt man entweder <em>stark typisiert</em> oder <em>schwach typisiert</em>. Stark typisierte Programmiersprachen sind beispielsweise <em>C++</em> und <em>Java</em>, während schwach typisierte Sprachen beispielsweise PHP und JavaScript sind. Bei der Typisierung gibt es Typprüfungen, die entweder zur Kompilierzeit oder Laufzeit vorgenommen werden. Man spricht hier entweder von einer statischen Typprüfung oder dynamischen Typprüfung. [9]</p>
 <p><strong>Statische Typisierung</strong></p>
-<p>Die statische Typisierung gilt als die stark typisierte Typisierung. Bei einer statischen Typprüfung werden beispielsweise Zuweisungsfehler noch vor der Laufzeit erkannt beziehungsweise wird eine Typprüfung bereits zum Zeitpunkt der Kompilierung durchgeführt. Der Nachteil einer statischen Typisierung ist, dass teilweise die Typen erst zur Laufzeit bekannt sind. Des Weiteren ist der Compiler komplexer, da hier ein gewisser Mehraufwand für die Analyse anfällt.</p>
+<p>Die statische Typisierung gilt als die stark typisierte Typisierung. Bei einer statischen Typprüfung werden beispielsweise Zuweisungsfehler noch vor der Laufzeit erkannt beziehungsweise wird eine Typprüfung bereits zum Zeitpunkt der Kompilierung durchgeführt. Der Nachteil einer statischen Typisierung ist, dass teilweise die Typen erst zur Laufzeit bekannt sind. Des Weiteren ist der Compiler komplexer, da hier ein gewisser Mehraufwand für die Analyse anfällt. [7]</p>
 <p><strong>Dynamische Typisierung</strong></p>
-<p>Diese Art der Typisierung zeichnet sich durch ein hohes Maß an Flexibilität aus und gilt als die schwach typisierte Typisierung. Doch kann die hohe Flexibilität als Schwachstelle gesehen werden. Denn manche Fehler können mit diesem Schema der Typisierung erst zur Laufzeit erkannt werden - das bedeutet unter Umständen eine erschwerte Fehlersuche. Des Weiteren ist die dynamische Typisierung anfällig für einen nachlässigen Umgang in der Entwicklung. Zusätzlich erlaubt die dynamische Typisierung die korrekte Verarbeitung von eigentlich inkompatiblen Typen.</p>
+<p>Diese Art der Typisierung zeichnet sich durch ein hohes Maß an Flexibilität aus und gilt als die schwach typisierte Typisierung. Doch kann die hohe Flexibilität als Schwachstelle gesehen werden. Denn manche Fehler können mit diesem Schema der Typisierung erst zur Laufzeit erkannt werden - das bedeutet unter Umständen eine erschwerte Fehlersuche. Des Weiteren ist die dynamische Typisierung anfällig für einen nachlässigen Umgang in der Entwicklung. Zusätzlich erlaubt die dynamische Typisierung die korrekte Verarbeitung von eigentlich inkompatiblen Typen. [8]</p>
 <footer class=footline>
 </footer>
 </div>
@@ -257,16 +257,16 @@ Website Rendering
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/js/clipboard.min.js?1642519480></script>
-<script src=/js/perfect-scrollbar.min.js?1642519480></script>
-<script src=/js/perfect-scrollbar.jquery.min.js?1642519480></script>
-<script src=/js/jquery.sticky.js?1642519480></script>
-<script src=/js/featherlight.min.js?1642519480></script>
-<script src=/js/highlight.pack.js?1642519480></script>
+<script src=/js/clipboard.min.js?1642533181></script>
+<script src=/js/perfect-scrollbar.min.js?1642533181></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1642533181></script>
+<script src=/js/jquery.sticky.js?1642533181></script>
+<script src=/js/featherlight.min.js?1642533181></script>
+<script src=/js/highlight.pack.js?1642533181></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/js/modernizr.custom-3.6.0.js?1642519480></script>
-<script src=/js/learn.js?1642519480></script>
-<script src=/js/hugo-learn.js?1642519480></script>
+<script src=/js/modernizr.custom-3.6.0.js?1642533181></script>
+<script src=/js/learn.js?1642533181></script>
+<script src=/js/hugo-learn.js?1642533181></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 <script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-105947713-1','auto'),ga('send','pageview')</script>
