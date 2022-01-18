@@ -12,7 +12,7 @@ Mit Web-Programmiersprachen können komplexe logische Anweisungen und Prozesse d
 
 #### 3.1.1 JavaScript
 
-Bekannt ist JavaScript als prototypbasierte Skriptsprache für Webseiten. Jedoch wird diese _lightweight_ Sprache auch in anderen Umgebungen eingesetzt, wie beispielsweise Node.js oder _Apache_. Was bedeutet lightweight im Zusammenhang mit einer Programmiersprache? Lightweight Sprachen sind so designt, dass sie einen kleinen _Memory-Footprint_ besitzen, einfach in verschiedenen Systemen zu implementieren sind und sie eine minimalistische Syntax aufweisen.
+Bekannt ist JavaScript als prototypbasierte Skriptsprache für Webseiten. Jedoch wird diese _lightweight_ Sprache auch in anderen Umgebungen eingesetzt, wie beispielsweise Node.js oder _Apache_. Was bedeutet lightweight im Zusammenhang mit einer Programmiersprache? Lightweight Sprachen sind so designt, dass sie einen kleinen _Memory-Footprint_ besitzen (wenig Speicher benötigen), einfach in verschiedenen Systemen zu implementieren sind und sie eine minimalistische Syntax aufweisen.
 
 JavaScript trägt zwar den Namen der objektorientierten Programmiersprache Java, doch wurden beide Sprachen in den frühen 90er-Jahren unabhängig voneinander entwickelt mit völlig unterschiedlichen Grundkonzepten.
 
@@ -119,7 +119,7 @@ PHP unterstützt unter anderem folgende Frameworks: Symfony, _Laravel_, _CodeIgn
 
 #### 3.1.5 Ruby
 
-Ruby ist eine dynamische Programmiersprache, sie sich produktiv einsetzen lässt. Sie zeichnet sich aus durch eine elegante und leicht zu lesende und schreibende Syntax. Ruby ist eine objektorientierte Programmiersprache, unterstützt aber weitere Programmierparadigmen, wie prozedurale und funktionale Programmierung. Die wohl größte Verbreitung findet Ruby im Einsatz als Webserver-Skriptsprache. 
+Ruby ist eine dynamische Programmiersprache, die sich produktiv einsetzen lässt. Sie zeichnet sich aus durch eine elegante und leicht zu lesende und schreibende Syntax. Ruby ist eine objektorientierte Programmiersprache, unterstützt aber weitere Programmierparadigmen, wie prozedurale und funktionale Programmierung. Die wohl größte Verbreitung findet Ruby im Einsatz als Webserver-Skriptsprache. 
 
 __Objektorientierte Programmierung__
 
