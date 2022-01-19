@@ -14,8 +14,8 @@ Das Ziel der Typisierung ist die Vermeidung von Laufzeitfehlern. Sie dient dazu,
 
 __Statische Typisierung__
 
-Die statische Typisierung gilt als die stark typisierte Typisierung. Bei einer statischen Typprüfung werden beispielsweise Zuweisungsfehler noch vor der Laufzeit erkannt beziehungsweise wird eine Typprüfung bereits zum Zeitpunkt der Kompilierung durchgeführt. Der Nachteil einer statischen Typisierung ist, dass teilweise die Typen erst zur Laufzeit bekannt sind. Des Weiteren ist der Compiler komplexer, da hier ein gewisser Mehraufwand für die Analyse anfällt. [7]
+Bei einer statischen Typprüfung werden beispielsweise Zuweisungsfehler noch vor der Laufzeit erkannt beziehungsweise wird eine Typprüfung bereits zum Zeitpunkt der Kompilierung durchgeführt. Der Nachteil einer statischen Typisierung ist, dass teilweise die Typen erst zur Laufzeit bekannt sind. Des Weiteren ist der Compiler komplexer, da hier ein gewisser Mehraufwand für die Analyse anfällt. [5, 7, 43]
 
 __Dynamische Typisierung__
 
-Diese Art der Typisierung zeichnet sich durch ein hohes Maß an Flexibilität aus und gilt als die schwach typisierte Typisierung. Doch kann die hohe Flexibilität als Schwachstelle gesehen werden. Denn manche Fehler können mit diesem Schema der Typisierung erst zur Laufzeit erkannt werden - das bedeutet unter Umständen eine erschwerte Fehlersuche. Des Weiteren ist die dynamische Typisierung anfällig für einen nachlässigen Umgang in der Entwicklung. Zusätzlich erlaubt die dynamische Typisierung die korrekte Verarbeitung von eigentlich inkompatiblen Typen. [8]
+Diese Art der Typisierung zeichnet sich durch ein hohes Maß an Flexibilität aus. Doch kann die hohe Flexibilität als Schwachstelle gesehen werden. Denn manche Fehler können mit diesem Schema der Typisierung erst zur Laufzeit erkannt werden - das bedeutet unter Umständen eine erschwerte Fehlersuche. Des Weiteren ist die dynamische Typisierung anfällig für einen nachlässigen Umgang in der Entwicklung. Zusätzlich erlaubt die dynamische Typisierung die korrekte Verarbeitung von eigentlich inkompatiblen Typen. [5, 43]

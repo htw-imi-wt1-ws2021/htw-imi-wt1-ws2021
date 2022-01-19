@@ -16,33 +16,33 @@ Bekannt ist JavaScript als prototypbasierte Skriptsprache für Webseiten. Jedoch
 
 JavaScript trägt zwar den Namen der objektorientierten Programmiersprache Java, doch wurden beide Sprachen in den frühen 90er-Jahren unabhängig voneinander entwickelt mit völlig unterschiedlichen Grundkonzepten.
 
-Je nach Bedarf lässt sich in JavaScript objektorientiert, prozedural oder funktional programmieren. Dies ist möglich durch den standardisierten Sprachkern _ECMAScript_. Dieser beschreibt eine dynamisch typisierte, objektorientierte, aber klassenlose Sprache.
+Je nach Bedarf lässt sich in JavaScript objektorientiert, prozedural oder funktional programmieren. Dies ist möglich durch den standardisierten Sprachkern _ECMAScript_. Dieser beschreibt eine dynamisch typisierte, objektorientierte, aber klassenlose Sprache. [1, 2, 46]
 
 __Objektorientierte Programmierung__
 
-Obwohl JavaScript dank seines Sprachkerns objektorientierte Programmierparadigmen beinhaltet, kann es nicht als objektorientierte Programmiersprache angesehen werden. JavaScript unterstützt Grundelemente der Objektorientierung wie beispielsweise Datenkapselung, Polymorphie und Vererbung. Doch das wesentlichste Konzept __Klassen__ bietet sie nicht. Mit ECMAScript 6 (kurz ES6) wurde jedoch das Schlüsselwort _class_ eingeführt, mit dem es möglich ist, nun pseudo Klassen zu definieren. Doch sind diese nichts weiter als Funktionen - anstatt _function_ ist es nun möglich, class zu verwenden.
+Obwohl JavaScript dank seines Sprachkerns objektorientierte Programmierparadigmen beinhaltet, kann es nicht als objektorientierte Programmiersprache angesehen werden. JavaScript unterstützt Grundelemente der Objektorientierung wie beispielsweise Datenkapselung, Polymorphie und Vererbung. Doch das wesentlichste Konzept __Klassen__ bietet sie nicht. Mit ECMAScript 6 (kurz ES6) wurde jedoch das Schlüsselwort _class_ eingeführt, mit dem es möglich ist, nun pseudo Klassen zu definieren. Doch sind diese nichts weiter als Funktionen - anstatt _function_ ist es nun möglich, class zu verwenden. [10, 11]
 
 __Prototyp__
 
 Jedes Objekt in JavaScript verfügt über die Eigenschaft _prototype_. Mit diesem Muster beziehungsweise Bauplan werden Objekte erzeugt. Anders als in objektorientierten und klassenbasierten Sprachen, wo Klassen das Muster für Objekte sind.
 
-Prototypen unterscheiden sich von Klassen dahingehend, dass auf Objekten eines Prototyps beliebige Operationen ausgeführt werden können. Das geht bei Klassen nicht. Ein weiterer Unterschied ist, wenn aus einer Klasse ein Objekt gebildet wird, entsteht eine Instanz. Bei Objekten eines Prototypen referenziert das erzeugte Objekt auf den Prototypen. Auch ist es möglich, das Objekte eines Prototyps nachträglich mit Eigenschaften und Methoden ergänzt werden können. Das geht bei Klassen auch nicht.
+Prototypen unterscheiden sich von Klassen dahingehend, dass auf Objekten eines Prototyps beliebige Operationen ausgeführt werden können. Das geht bei Klassen nicht. Ein weiterer Unterschied ist, wenn aus einer Klasse ein Objekt gebildet wird, entsteht eine Instanz. Bei Objekten eines Prototypen referenziert das erzeugte Objekt auf den Prototypen. Auch ist es möglich, das Objekte eines Prototyps nachträglich mit Eigenschaften und Methoden ergänzt werden können. Das geht bei Klassen auch nicht. [2, 47]
 
 __Typisierung__
 
-JavaScript ist ein Vertreter der dynamischen Typisierung. Das bedeutet, dass die Typprüfung erst zur Laufzeit passiert - beispielsweise die Prüfung des Datentyps einer Variable.
+JavaScript ist ein Vertreter der dynamischen Typisierung. Das bedeutet, dass die Typprüfung erst zur Laufzeit passiert - beispielsweise die Prüfung des Datentyps einer Variable. [2]
 
 __Typsicherheit__
 
-In Sachen Typsicherheit nimmt es JavaScript nicht allzu ernst. In großen Projekten ist JavaScript bezüglich der dynamischen Typsicherheit nicht einfach zu handhaben, da Typen schlichtweg nicht angegeben werden müssen.
+In Sachen Typsicherheit nimmt es JavaScript nicht allzu ernst. In großen Projekten ist JavaScript bezüglich der dynamischen Typsicherheit nicht einfach zu handhaben, da Typen schlichtweg nicht angegeben werden müssen. [5]
 
 __Frontend__
 
-JavaScript zählt wohl mit zu den beliebtesten Programmiersprachen überhaupt und die Sprache unterstützt wohl die meisten Frameworks und Bibliotheken, die es für den Frontend-Bereich gibt. JavaScript ist überaus beliebt und dynamisch und unterstützt unter anderem folgende Frontend-Frameworks und Bibliotheken: Angular, React, _Vue.js_, _Ember.js_, _Aurelia_, und noch viele mehr!
+JavaScript zählt wohl mit zu den beliebtesten Programmiersprachen überhaupt und die Sprache unterstützt wohl die meisten Frameworks und Bibliotheken, die es für den Frontend-Bereich gibt. JavaScript ist überaus beliebt und dynamisch und unterstützt unter anderem folgende Frontend-Frameworks und Bibliotheken: Angular, React, _Vue.js_, _Ember.js_, _Aurelia_, und noch viele mehr! [19, 48, 49]
 
 __Backend__
 
-Wie beim Frontend, zählt JavaScript auch beim Backend zu den beliebtesten Programmiersprachen überhaupt. JavaScript unterstützt auch im Bereich Backend eine vielzahl von verschiedenen Frameworks und Bibliotheken: Node.js, _Next.js_, _Express.js_, _Meteor_, und mehr.
+Wie beim Frontend, zählt JavaScript auch beim Backend zu den beliebtesten Programmiersprachen überhaupt. JavaScript unterstützt auch im Bereich Backend eine vielzahl von verschiedenen Frameworks und Bibliotheken: Node.js, _Next.js_, _Express.js_, _Meteor_, und mehr. [49, 50]
 
 #### 3.1.2 TypeScript
 
@@ -96,47 +96,48 @@ Als Backend-Programmiersprache ist Python im Vergleich zum Frontend wesentlich b
 
 Ist die Rede von Web-Programmiersprachen, so spielt die Skriptsprache PHP eine überaus große Rolle. PHP ist die mit Abstand am häufigsten serverseitig verwendete Programmiersprache zur Erstellung von Webseiten. Die Syntax von PHP ist angelehnt an den Programmiersprachen _C_ und _Perl_. Anders als beispielsweise bei JavaScript, ist PHP eine serverseitig interpretierte Skriptsprache, mit der es möglich ist, Webseiten dynamisch zu erzeugen, sowie Daten aus Benutzereingaben und Datenbanken zu verarbeiten.
 
-Bei serverseitigem Code wird der Quelltext nicht direkt an den Webbrowser übermittelt, sondern an einen Interpreter auf dem Webserver. Der PHP-Interpreter schickt die Ausgabe an den Browser - ein HTML-Dokument.
+Bei serverseitigem Code wird der Quelltext nicht direkt an den Webbrowser übermittelt, sondern an einen Interpreter auf dem Webserver. Der PHP-Interpreter schickt die Ausgabe an den Browser - ein HTML-Dokument. [51, 52]
 
 __Warum PHP und nicht rein HTML?__
 
-HTML oder HTML-Dateien sind rein statisch. Zum Beispiel: Bei der Erstellung einer Tabelle mit einer bestimmten Anzahl an Einträgen kann nur diese bestimmte Anzahl angezeigt werden. Mit PHP ist das flexibel beziehungsweise dynamisch möglich. Theoretisch alles, was auf einer Webseite dynamisch angezeigt werden soll, ist mit PHP möglich - beispielsweise ein Besuchercounter oder Einträge in einem Gästebuch.
+HTML oder HTML-Dateien sind rein statisch. Zum Beispiel: Bei der Erstellung einer Tabelle mit einer bestimmten Anzahl an Einträgen kann nur diese bestimmte Anzahl angezeigt werden. Mit PHP ist das flexibel beziehungsweise dynamisch möglich. Theoretisch alles, was auf einer Webseite dynamisch angezeigt werden soll, ist mit PHP möglich - beispielsweise ein Besuchercounter oder Einträge in einem Gästebuch. [53]
 
 __Objektorientierte Programmierung__
 
-In PHP ist die objektorientierte Programmierung möglich. Dadurch wird PHP-Code leichter wartbar und ist einfacher wiederverwendbar. 
+In PHP ist die objektorientierte Programmierung möglich. Dadurch wird PHP-Code leichter wartbar und ist einfacher wiederverwendbar. [51, 54] 
 
 __Typisierung__
 
-Wie bei vielen anderen Skriptsprachen auch, ist PHP ein Vertreter der dynamischen Typisierung beziehungsweise PHP ist schwach typisiert. Das bedeutet, dass die Typprüfung erst zur Laufzeit passiert - beispielsweise die Prüfung des Datentyps einer Variable.
+Wie bei vielen anderen Skriptsprachen auch, ist PHP ein Vertreter der dynamischen Typisierung beziehungsweise PHP ist schwach typisiert. Das bedeutet, dass die Typprüfung erst zur Laufzeit passiert - beispielsweise die Prüfung des Datentyps einer Variable. [55]
 
 __Typsicherheit__
 
-PHP ist eine schwach typisierte Programmiersprache und somit ist es nicht möglich, typsicher zu deklarieren. Jedoch gibt es bei PHP das __Type Hinting__ mit dem es Funktionen ermöglicht, spezifische Parameter zu erzwingen.
+PHP ist eine schwach typisierte Programmiersprache und somit ist es nicht möglich, typsicher zu deklarieren. Jedoch gibt es bei PHP das __Type Hinting__ mit dem es Funktionen ermöglicht, spezifische Parameter zu erzwingen. [56, 57]
 
-Frontend und Backend
-PHP unterstützt unter anderem folgende Frameworks: Symfony, _Laravel_, _CodeIgniter_, _CakePHP_ oder _Phalcon_.
+__Frontend und Backend__
+
+PHP unterstützt unter anderem folgende Frameworks: Symfony, _Laravel_, _CodeIgniter_, _CakePHP_ oder _Phalcon_. [58]
 
 #### 3.1.5 Ruby
 
-Ruby ist eine dynamische Programmiersprache, die sich produktiv einsetzen lässt. Sie zeichnet sich aus durch eine elegante und leicht zu lesende und schreibende Syntax. Ruby ist eine objektorientierte Programmiersprache, unterstützt aber weitere Programmierparadigmen, wie prozedurale und funktionale Programmierung. Die wohl größte Verbreitung findet Ruby im Einsatz als Webserver-Skriptsprache. 
+Ruby ist eine dynamische Programmiersprache, die sich produktiv einsetzen lässt. Sie zeichnet sich aus durch eine elegante und leicht zu lesende und schreibende Syntax. Ruby ist eine objektorientierte Programmiersprache, unterstützt aber weitere Programmierparadigmen, wie prozedurale und funktionale Programmierung. Die wohl größte Verbreitung findet Ruby im Einsatz als Webserver-Skriptsprache. [42]
 
 __Objektorientierte Programmierung__
 
-Ruby ist von Grund auf objektorientiert, was bedeutet, dass in Ruby ausnahmslos jeder Wert ein Objekt und jede Funktion eine Methode ist. Selbst Klassen sind Objekte. Die Objekte in Ruby sind dynamisch, was bedeutet, dass es auch möglich ist, prototypenbasiert zu programmieren. Damit können Objekte eigene Methoden haben.
+Ruby ist von Grund auf objektorientiert, was bedeutet, dass in Ruby ausnahmslos jeder Wert ein Objekt und jede Funktion eine Methode ist. Selbst Klassen sind Objekte. Die Objekte in Ruby sind dynamisch, was bedeutet, dass es auch möglich ist, prototypenbasiert zu programmieren. Damit können Objekte eigene Methoden haben. [42]
 
 __Typisierung__
 
-Ruby ist Vertreter der dynamischen Typisierung und ist somit schwach typisiert.
+Ruby ist Vertreter der dynamischen Typisierung und ist stark typisiert. [42]
 
 __Typsicherheit__
 
-Wie bei anderen Vertretern der dynamischen Typisierung auch ist es bei Ruby nicht möglich, typsicher zu deklarieren.
+Wie bei anderen Vertretern der dynamischen Typisierung auch ist es bei Ruby nicht möglich, typsicher zu deklarieren. [42]
 
 __Frontend__
 
-Ruby wird teilweise auch für den Frontend-Bereich eingesetzt. Dennoch wird Ruby mehr als Backend-Programmiersprache gesehen als Frontend. Um Ruby im Frontend einzusetzen, muss Ruby-Quellcode in JavaScript-Code umgewandelt werden. Mit _Ruby2JS_, einer Ruby Erweiterung können Entwickler in Ruby-Code schreiben und den Code dann in JavaScript-Code umwandeln lassen. 
+Ruby wird teilweise auch für den Frontend-Bereich eingesetzt. Dennoch wird Ruby mehr als Backend-Programmiersprache gesehen als Frontend. Um Ruby im Frontend einzusetzen, muss Ruby-Quellcode in JavaScript-Code umgewandelt werden. Mit _Ruby2JS_, einer Ruby Erweiterung können Entwickler in Ruby-Code schreiben und den Code dann in JavaScript-Code umwandeln lassen. [59]
 
 __Backend__
 
-Ruby ist eine überaus beliebte Programmiersprache für den Backend-Bereich. Das wohl bekannteste Backend-Framework für Ruby ist Ruby on Rails. Das beliebteste Feature von _Ruby on Rails_ ist die Model-View-Controller-Architektur (kurz _MVC_). Dadurch ermöglicht das Framework, alle Code-Vorgänge separat durchzuführen. Neben Ruby on Rails gibt es noch weitere Backend-Frameworks wie: _Sinatra_, _Roda_ oder auch _Camping_.
+Ruby ist eine überaus beliebte Programmiersprache für den Backend-Bereich. Das wohl bekannteste Backend-Framework für Ruby ist Ruby on Rails. Das beliebteste Feature von _Ruby on Rails_ ist die Model-View-Controller-Architektur (kurz _MVC_). Dadurch ermöglicht das Framework, alle Code-Vorgänge separat durchzuführen. Neben Ruby on Rails gibt es noch weitere Backend-Frameworks wie: _Sinatra_, _Roda_ oder auch _Camping_. [41, 60]
