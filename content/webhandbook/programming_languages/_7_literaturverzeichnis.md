@@ -64,3 +64,6 @@ tags: ["literaturverzeichnis"]
 - [58] "10 Popular PHP frameworks for web developers to consider in 2021", raygun.com, Link: https://raygun.com/blog/top-php-frameworks/ (letzter Zugriff am 19.01.2022)
 - [59] "Ruby2JS", ruby2js.com, Link: https://www.ruby2js.com/ (letzter Zugriff am 19.01.2022)
 - [60] "Ruby on Rails", Wikipedia, Link: https://de.wikipedia.org/wiki/Ruby_on_Rails (letzter Zugriff am 19.01.2022)
+- [61] "State of the Frontend 2020", Patryk Mamczur, Link: https://tsh.io/state-of-frontend/#ebook (letzter Zugriff am 23.01.2022)
+- [62] "The 16 Most Important Pros and Cons of using Python for Web Development", Julie Korsun, 06.07.2021, Link: https://djangostars.com/blog/python-web-development/ (letzter Zugriff am 23.01.2022)
+- [63] "How to Choose a Programming Language For a Project?", GeeksforGeeks, 31.08.2021, Link: https://www.geeksforgeeks.org/how-to-choose-a-programming-language-for-a-project/ (letzter Zugriff am 23.01.2022)

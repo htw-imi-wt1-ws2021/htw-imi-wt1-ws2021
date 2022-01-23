@@ -4,9 +4,9 @@ description : "Fazit"
 tags: ["fazit"]
 ---
 
-Es gibt nicht die eine Programmiersprache für die Webentwicklung. Jede Programmiersprache hat Vor- und Nachteile gegenüber einer anderen. Es ist schlicht notwendig zu entscheiden, für welchen Anwendungszweck welche Sprache angewendet werden soll. Des Weiteren ist zu berücksichtigen, dass es noch wesentlich mehr Programmiersprachen für die Webentwicklung gibt, welche in diesem Text aus Platzgründen nicht erwähnt wurden.
+Es gibt nicht die eine Programmiersprache für die Webentwicklung. Jede Programmiersprache hat Vor- und Nachteile gegenüber einer anderen. Dazu zählen neben der Typsicherheit, Typisierung und objektorientierten Programmierung auch die Komplexität der Programmiersprache. So ist beispielsweise Python durch die einfache Syntax leichter verständlich für Nicht-Informatiker. Es ist schlicht notwendig zu entscheiden, für welchen Anwendungszweck welche Sprache angewendet werden soll. Python wird beispielsweise häufiger in einem wissenschaftlichen Zusammenhang verwendet, da dort zahlreiche Bibliotheken für viele Anwendungen existieren sowie Python sich besonders für den Bereich Machine Learning als auch KI besser eignet. Ein weiteres Beispiel: Soll die Anwendung eine simple Webseite inklusive Texten und Bildern sein, so ist die Umsetzung mit JavaScript wesentlich komfortabler als mit Python. [62, 63]
 
-Einen aktuellen Blick auf die beliebtesten Sprachen und Frameworks im Bereich Frontend liefert ein Bericht aus dem Jahr 2020: https://tsh.io/state-of-frontend/#ebook
+Einen aktuellen Blick auf die beliebtesten Sprachen und Frameworks im Bereich Frontend liefert ein Bericht aus dem Jahr 2020 [61]: https://tsh.io/state-of-frontend/#ebook
 
 ![Fazit](/webhandbook/programming_languages/images/fazit.jpg?width=40pc)
 
