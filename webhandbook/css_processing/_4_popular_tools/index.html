@@ -6,7 +6,7 @@
 <meta name=description content="Documentation for our Projects and Web Handbook">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>chapter :: Documentation for our Projects and Web Handbook</title>
+<title>4 Popular Tools :: Documentation for our Projects and Web Handbook</title>
 <link href=/css/nucleus.css?1642953872 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642953872 rel=stylesheet>
 <link href=/css/hybrid.css?1642953872 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642953872></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/tags/chapter/>
+<body data-url=/webhandbook/css_processing/_4_popular_tools/>
 <nav id=sidebar>
 <div id=header-wrapper>
 <div id=header>
@@ -76,7 +76,8 @@ Projekte
 </li>
 </ul>
 </li>
-<li data-nav-id=/webhandbook/ title=Webhandbook class=dd-item>
+<li data-nav-id=/webhandbook/ title=Webhandbook class="dd-item
+parent">
 <a href=/webhandbook/>
 Webhandbook
 </a>
@@ -96,7 +97,8 @@ Authentication
 CI/CD
 </a>
 </li>
-<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class=dd-item>
+<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class="dd-item
+parent">
 <a href=/webhandbook/css_processing/>
 CSS Processing
 </a>
@@ -116,7 +118,7 @@ CSS Processing
 3 Optimisation
 </a>
 </li>
-<li data-nav-id=/webhandbook/css_processing/_4_popular_tools/ title="4 Popular Tools" class=dd-item>
+<li data-nav-id=/webhandbook/css_processing/_4_popular_tools/ title="4 Popular Tools" class="dd-item active">
 <a href=/webhandbook/css_processing/_4_popular_tools/>
 4 Popular Tools
 </a>
@@ -239,11 +241,23 @@ Website Rendering
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/tags/>Tags</a> > chapter
+<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/webhandbook/>Webhandbook</a> > <a href=/webhandbook/css_processing/>CSS Processing</a> > 4 Popular Tools
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#sass>Sass</a></li>
+<li><a href=#less>Less</a></li>
+<li><a href=#stylus>Stylus</a></li>
+<li><a href=#postcss>PostCSS</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
@@ -252,29 +266,27 @@ Website Rendering
 </div>
 <div id=body-inner>
 <h1>
-tag ::
-chapter
+4 Popular Tools
 </h1>
-<ul>
-<li><a href=/webhandbook/apis/>APIs</a></li>
-<li><a href=/webhandbook/authentication/>Authentication</a></li>
-<li><a href=/webhandbook/ci_cd/>CI/CD</a></li>
-<li><a href=/webhandbook/css_processing/>CSS Processing</a></li>
-<li><a href=/webhandbook/databases/>Databases</a></li>
-<li><a href=/webhandbook/microservices/>Microservices</a></li>
-<li><a href=/webhandbook/node/>Node.js</a></li>
-<li><a href=/webhandbook/react/>React</a></li>
-<li><a href=/webhandbook/ui_ux/>UI/UX</a></li>
-<li><a href=/webhandbook/programming_languages/>Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology</a></li>
-<li><a href=/webhandbook/web_frameworks/>Web Frameworks</a></li>
-<li><a href=/webhandbook/website_rendering/>Website Rendering</a></li>
-</ul>
+<p>There are four very popular CSS processing tools. They all support some of the features mentioned above, but none of them support them all. Further, some of them can be used together, but again not all.</p>
+<h3 id=sass>Sass</h3>
+<p>Sass[10] is the oldest of the four presented tools, with the initial release in 2006. It has a large set of features that extend the CSS syntax, like nesting, functions or variables, and supports two syntaxes. The original syntax (syntactically awesome style sheets, <code>.sass</code>), uses indention and line breaks instead of curly braces and semicolons. Later another syntax was added that is similar to CSS block formatting (Sassy CSS, <code>.scss</code>).</p>
+<h3 id=less>Less</h3>
+<p>The Less[11] processor was created after Sass, and as such, they have near feature-parity. The language was designed to be very close to CSS and, CSS block formatting syntax. Even though Less can be precompiled to CSS as the other tools, it is also possible to ship and run the compiler in the browser.</p>
+<p>While Sass uses <code>$</code> to denote variables, Less employs <code>@</code>-symbols, which has the drawback that some parts of the modern CSS spec, such as media queries or animations, also use it for other purposes, which can be confusing.</p>
+<h3 id=stylus>Stylus</h3>
+<p>The third stylesheet processor that appeared in 2010 and is influenced by Sass and Less is Stylus[12], hence the set of features is very similar. The big differentiator of Stylus is its minimalist syntax, which makes line-breaks, and semicolons optional, comparable to Sass, and even go a step further and makes colons optional as well.</p>
+<p>Stylus adoption is relatively low in comparison to Sass and Less[13]. Especially built-in support in IDEs, Editors and bundlers is lower. But most popular development tools have extensions available.</p>
+<h3 id=postcss>PostCSS</h3>
+<p>PostCSS[14] is different from the previous tools in so far that it is less a CSS processor in of itself, and instead a framework with which plugins can modify CSS. First, the input CSS is parsed into a syntax tree on which plugins can perform modifications, once they are done PostCSS transforms the modified tree back into CSS.</p>
+<p>The default parser for PostCSS can only parse CSS; foreign syntax, as it is introduced by Less, Sass or Styles first needs to be compiled down to CSS. Therefore, it is not uncommon that PostCSS is used in conjunction with one of these languages. Also, due to the available range of plugins PostCSS can not only be used for minification and auto prefixing, but also as a linter or formatter.</p>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/projects/ title=Projekte style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/webhandbook/css_processing/_3_optimisation/ title="3 Optimisation"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/webhandbook/css_processing/_5_integration/ title="5 Integration and Considerations" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

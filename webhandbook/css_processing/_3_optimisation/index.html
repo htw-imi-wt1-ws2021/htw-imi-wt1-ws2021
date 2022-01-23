@@ -6,7 +6,7 @@
 <meta name=description content="Documentation for our Projects and Web Handbook">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>chapter :: Documentation for our Projects and Web Handbook</title>
+<title>3 Optimisation :: Documentation for our Projects and Web Handbook</title>
 <link href=/css/nucleus.css?1642953872 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642953872 rel=stylesheet>
 <link href=/css/hybrid.css?1642953872 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642953872></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/tags/chapter/>
+<body data-url=/webhandbook/css_processing/_3_optimisation/>
 <nav id=sidebar>
 <div id=header-wrapper>
 <div id=header>
@@ -76,7 +76,8 @@ Projekte
 </li>
 </ul>
 </li>
-<li data-nav-id=/webhandbook/ title=Webhandbook class=dd-item>
+<li data-nav-id=/webhandbook/ title=Webhandbook class="dd-item
+parent">
 <a href=/webhandbook/>
 Webhandbook
 </a>
@@ -96,7 +97,8 @@ Authentication
 CI/CD
 </a>
 </li>
-<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class=dd-item>
+<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class="dd-item
+parent">
 <a href=/webhandbook/css_processing/>
 CSS Processing
 </a>
@@ -111,7 +113,7 @@ CSS Processing
 2 Authoring
 </a>
 </li>
-<li data-nav-id=/webhandbook/css_processing/_3_optimisation/ title="3 Optimisation" class=dd-item>
+<li data-nav-id=/webhandbook/css_processing/_3_optimisation/ title="3 Optimisation" class="dd-item active">
 <a href=/webhandbook/css_processing/_3_optimisation/>
 3 Optimisation
 </a>
@@ -239,11 +241,22 @@ Website Rendering
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/tags/>Tags</a> > chapter
+<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/webhandbook/>Webhandbook</a> > <a href=/webhandbook/css_processing/>CSS Processing</a> > 3 Optimisation
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#minification>Minification</a></li>
+<li><a href=#polyfills>Polyfills</a></li>
+<li><a href=#vendor-prefixes>Vendor Prefixes</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
@@ -252,29 +265,37 @@ Website Rendering
 </div>
 <div id=body-inner>
 <h1>
-tag ::
-chapter
+3 Optimisation
 </h1>
-<ul>
-<li><a href=/webhandbook/apis/>APIs</a></li>
-<li><a href=/webhandbook/authentication/>Authentication</a></li>
-<li><a href=/webhandbook/ci_cd/>CI/CD</a></li>
-<li><a href=/webhandbook/css_processing/>CSS Processing</a></li>
-<li><a href=/webhandbook/databases/>Databases</a></li>
-<li><a href=/webhandbook/microservices/>Microservices</a></li>
-<li><a href=/webhandbook/node/>Node.js</a></li>
-<li><a href=/webhandbook/react/>React</a></li>
-<li><a href=/webhandbook/ui_ux/>UI/UX</a></li>
-<li><a href=/webhandbook/programming_languages/>Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology</a></li>
-<li><a href=/webhandbook/web_frameworks/>Web Frameworks</a></li>
-<li><a href=/webhandbook/website_rendering/>Website Rendering</a></li>
-</ul>
+<p>In addition to the features that support developers in designing stylesheets, there are also features of CSS processors that optimize existing CSS for speed and browser support.</p>
+<h3 id=minification>Minification</h3>
+<p>The probably most popular CSS processing feature is minification. Most programming languages include characters that are not strictly part of the syntax but increase legibility. This means whitespace characters primarily, and to a lesser extent, the variable names a developer has chosen. Most CSS minifiers strip away comments and whitespace characters, which can lead to a reduction in file size up to 50%. This does not necessarily correlate with a 50% speed improvement, especially since most web servers compress their responses anyway, but it makes a difference nonetheless. The fewer characters there are to read, the less there are to compress, decompress and finally parse by the browser.</p>
+<p>A more complicated but not uncommon minification technique is also to minify class names. For example, a class called <code>.form-check-input</code> before minification might be reduced to very short identifiers, such as <code>.ab</code>. Similar to CSS modules, this method also requires integration with the HTML code in order to work.</p>
+<h3 id=polyfills>Polyfills</h3>
+<p>Besides file-size reduction, CSS optimization also includes modifications to improve compatibility among different browsers. For instance, one use case is to automatically make a website compatible with right-to-left languages instead of performing these optimizations manually. Another example might be that a developer wants to use the <code>#rrggbbaa</code> hex color notation that has been introduced in browsers recently, where the opacity can be included in the hex notation. If a developer wants to use this notation but also wants compatibility with an older browser that does not support this syntax, they can use CSS processors to replace them. In this specific example, the PostCSS Color Hex Alpha[6] plugin would do the following:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=color:#f92672>body</span> {
+  <span style=color:#66d9ef>background</span>: <span style=color:#ae81ff>#6ebd6e</span>cc;
+}
+<span style=color:#75715e>/* becomes */</span>
+<span style=color:#f92672>body</span> {
+  <span style=color:#66d9ef>background</span>: rgb(<span style=color:#ae81ff>110</span>, <span style=color:#ae81ff>189</span>, <span style=color:#ae81ff>110</span>, <span style=color:#ae81ff>0.8</span>);
+}
+</code></pre></div><h3 id=vendor-prefixes>Vendor Prefixes</h3>
+<p>A subset of these compatibility features is the automatic addition of vendor prefixes. The idea behind prefixing certain CSS properties was to denote that their functionality was either experimental or not part of the standard, so they could be experimented with but would not be relied upon by web developers until they were properly standardized. Some of the most notable properties were <code>animation</code>, <code>transition</code>, <code>box-shadow</code> and even <code>border-radius</code> that were already implemented in most browsers, but only through these prefixes. This meant that to create a transition that works across all browsers did look like this:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>-webkit-transition</span>: <span style=color:#ae81ff>all 4s ease;</span>
+<span style=color:#f92672>-moz-transition</span>: <span style=color:#ae81ff>all 4s ease;</span>
+<span style=color:#f92672>-ms-transition</span>: <span style=color:#ae81ff>all 4s ease;</span>
+<span style=color:#f92672>-o-transition</span>: <span style=color:#ae81ff>all 4s ease;</span>
+<span style=color:#f92672>transition</span>: <span style=color:#ae81ff>all 4s ease;</span>
+</code></pre></div><p>Because some of these features were already almost universally available, web developers used them. Automatic prefixing became a popular CSS processing feature to reduce the labor of writing the same line up to five times, just with different prefixes. The most notable prefixing tool is autoprefixer[7], where developers can target the browser versions they intend to support and add necessary prefixes.</p>
+<p>An analysis from Rob O&rsquo;Leary in 2021 has revealed that the number of properties that require prefixes has steadily gone down in recent years[8], and nowadays, browser vendors put new features behind user-controlled flags instead[9]. Still, there are good reasons to use prefixing today, for instance, simply to make websites compatible with older browsers that require these prefixes. Additionally, there are CSS properties that have 99% browser support with prefixes and significantly less without[8], even if most or all of them might not be as relevant as the prefixed versions of <code>box-shadow</code> or <code>border-radius</code> once were.</p>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/projects/ title=Projekte style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/webhandbook/css_processing/_2_authoring/ title="2 Authoring"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/webhandbook/css_processing/_4_popular_tools/ title="4 Popular Tools" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>

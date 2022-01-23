@@ -6,7 +6,7 @@
 <meta name=description content="Documentation for our Projects and Web Handbook">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>chapter :: Documentation for our Projects and Web Handbook</title>
+<title>1 History and Terminology :: Documentation for our Projects and Web Handbook</title>
 <link href=/css/nucleus.css?1642953872 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1642953872 rel=stylesheet>
 <link href=/css/hybrid.css?1642953872 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1642953872></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/tags/chapter/>
+<body data-url=/webhandbook/css_processing/_1_terminology/>
 <nav id=sidebar>
 <div id=header-wrapper>
 <div id=header>
@@ -76,7 +76,8 @@ Projekte
 </li>
 </ul>
 </li>
-<li data-nav-id=/webhandbook/ title=Webhandbook class=dd-item>
+<li data-nav-id=/webhandbook/ title=Webhandbook class="dd-item
+parent">
 <a href=/webhandbook/>
 Webhandbook
 </a>
@@ -96,12 +97,13 @@ Authentication
 CI/CD
 </a>
 </li>
-<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class=dd-item>
+<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class="dd-item
+parent">
 <a href=/webhandbook/css_processing/>
 CSS Processing
 </a>
 <ul>
-<li data-nav-id=/webhandbook/css_processing/_1_terminology/ title="1 History and Terminology" class=dd-item>
+<li data-nav-id=/webhandbook/css_processing/_1_terminology/ title="1 History and Terminology" class="dd-item active">
 <a href=/webhandbook/css_processing/_1_terminology/>
 1 History and Terminology
 </a>
@@ -239,11 +241,21 @@ Website Rendering
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/tags/>Tags</a> > chapter
+<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/webhandbook/>Webhandbook</a> > <a href=/webhandbook/css_processing/>CSS Processing</a> > 1 History and Terminology
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#history>History</a></li>
+<li><a href=#terminology>Terminology</a></li>
+</ul>
+</li>
+</ul>
+</nav>
 </div>
 </div>
 </div>
@@ -252,29 +264,22 @@ Website Rendering
 </div>
 <div id=body-inner>
 <h1>
-tag ::
-chapter
+1 History and Terminology
 </h1>
-<ul>
-<li><a href=/webhandbook/apis/>APIs</a></li>
-<li><a href=/webhandbook/authentication/>Authentication</a></li>
-<li><a href=/webhandbook/ci_cd/>CI/CD</a></li>
-<li><a href=/webhandbook/css_processing/>CSS Processing</a></li>
-<li><a href=/webhandbook/databases/>Databases</a></li>
-<li><a href=/webhandbook/microservices/>Microservices</a></li>
-<li><a href=/webhandbook/node/>Node.js</a></li>
-<li><a href=/webhandbook/react/>React</a></li>
-<li><a href=/webhandbook/ui_ux/>UI/UX</a></li>
-<li><a href=/webhandbook/programming_languages/>Vergleich verschiedener Programmiersprachen mit Fokus auf Web-Technology</a></li>
-<li><a href=/webhandbook/web_frameworks/>Web Frameworks</a></li>
-<li><a href=/webhandbook/website_rendering/>Website Rendering</a></li>
-</ul>
+<h3 id=history>History</h3>
+<p>CSS processors have existed for quite a while. The first release of the popular Sass processor was in 2006! CSS is a powerful and versatile language to describe the appearance of web pages but lacks features from other programming languages to increase productivity and reduce redundancies. However, some shortcomings of the language have been addressed in recent years, and features that once could only be achieved through CSS processors are now available in the language itself.</p>
+<p>For instance, when Sass was first released, there was no concept of variables in CSS, and values such as colors had to be hardcoded everywhere. So when large web projects wanted to change a specific color (e.g., the brand color), they had to go through all their stylesheets and replace the old values with the new ones.</p>
+<p>Modern CSS has native support for variables and many other features that once were only available through CSS processors. But not everything CSS processors have to offer exists in CSS today, and some will never be able to.</p>
+<h3 id=terminology>Terminology</h3>
+<p>When talking about CSS processing, typically, there is a separation between pre-processing and post-processing. The former describes transforming something that is not CSS into spec-compliant CSS, and the latter takes already valid CSS and optimizes it in some fashion. However, the most popular tools that perform these transformations can not be distinctly classified as falling clearly into one of these two categories anymore since they support functions that fall both into pre- and post-processing.</p>
+<p>In his article &lsquo;Deconfusing Pre- and Post-processing&rsquo; [1], Stefan Baumgartner defines a different terminology, authoring and optimization, instead of pre-and post-processing to classify the various features of CSS processing tools. This new categorization still doesn&rsquo;t allow us to neatly assign any feature to precisely one of the two categories. Still, it generally makes it easier to discuss whether something helps developers write nicer code or is done to optimize for size or greater support.</p>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-next" href=/projects/ title=Projekte style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/webhandbook/css_processing/ title="CSS Processing"> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/webhandbook/css_processing/_2_authoring/ title="2 Authoring" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
