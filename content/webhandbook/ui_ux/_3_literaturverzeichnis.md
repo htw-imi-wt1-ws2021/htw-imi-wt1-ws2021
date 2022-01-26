@@ -34,3 +34,11 @@ Gestaltungsunterstützende Evaluation von Software: Zur Effektivität und Effizi
 R. Kuhlen, W. Semar und D. Strauch, Grundlagen der praktischen Information und Dokumentation: Handbuch zur Einführung in die Informationswissenschaft und -praxis p. 431. (Usability Engineering Lifecycle) 
 
 ISO 9241 (Standard für MMI, Normen für UX etc)
+
+https://michaelgearon.medium.com/information-architecture-ia-in-ux-91dae4e3124d
+
+https://danewesolko.medium.com/peter-morvilles-user-experience-honeycomb-904c383b6886
+
+https://www.nngroup.com/articles/focus-groups/
+
+https://www.usability.de/leistungen/methoden/fokusgruppe.html
