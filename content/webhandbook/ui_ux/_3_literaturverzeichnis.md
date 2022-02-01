@@ -27,7 +27,7 @@ A Study on Understanding of UI and UX, and Understanding of Design According to 
 
 User-interface Design 
 
-AttrakDiff
+http://attrakdiff.de/sience.html
 
 Gestaltungsunterstützende Evaluation von Software: Zur Effektivität und Effizienz des IsoMetricsL Verfahrens
 
@@ -42,3 +42,9 @@ https://danewesolko.medium.com/peter-morvilles-user-experience-honeycomb-904c383
 https://www.nngroup.com/articles/focus-groups/
 
 https://www.usability.de/leistungen/methoden/fokusgruppe.html
+
+Duchowski, A. T. (2003). Eye Tracking Methodology: Theory and Practice. doi:10.1007/978-1-4471-3750-4, URL: sci-hub.se/10.1007/978-1-4471-3750-4 (zuletzt aufgerufen am 28.1.2022)
+
+https://www.interaction-design.org/literature/topics/user-research
+
+https://www.interaction-design.org/literature/topics/user-scenarios
