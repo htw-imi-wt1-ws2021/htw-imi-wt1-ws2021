@@ -64,10 +64,31 @@ Das Projekt sowie der Sourcecode sind unter folgendem Link zu finden:
 
 Vor der Umsetzung des Projektes wird zunächst eine Liste mit den Features erstellt. Hierfür wurde bei MyStuff eine sogenannte User Story Map verwendet. Dabei werden zunächst verschiedene Aktivitäten (grüne Post-Its) festgelegt, welche eine Art Kategorie bilden. Anschließend werden dieser Aktivität weitere Teilschritte zugeordnet (gelbe Post-Its). Beispielsweise gehören zu der Aktivität: Module bearbeiten, die Unterpunkte Modul erstellen, Modul löschen, Module sortieren (z. B. nach Semester) und Module priorisieren.
 
+![User Story Map](/images/1_team_mystuff/user_story_map.jpg?width=40pc)
 
-![Unser Screenshot](/images/1_team_mystuff/hello.jpg?width=40pc)
+Anschließend werden die Aktivitäten nach Zeit sortiert, d.h. je weiter links eine Aktivität steht desto früher soll diese bei der Entwicklung umgesetzt werden. Die einzelnen Teilschritte der Aktivität werden dabei auch nach ihrer Priorität sortiert - je weiter oben desto wichtiger ist diese.
+Als letzter Schritt wird eine rote Linie durch die User Story Map gezogen, also gelben Post-Its, welche sich oberhalb dieser Linie befinden, müssen in der fertigen Anwendungen vorhanden sein. Die verbleibenden Features werden erst implementiert, wenn alle Features oberhalb der roten Linie fertig sind und noch genügend Ressourcen für eine Weiterentwicklung vorhanden sind.
 
-#### 1.8 Link zum Sourcecode
+Nachdem alle Features der Anwendungen definiert wurden, wird als nächster Schritt ein erster Entwurf der Oberfläche der Web-App erstellt.
+Für die Erstellung der MyStuff Mockups wurde das Prototyping-Tool Figma verwendet 
 
-[Code](http://localhost:8080)
+(siehe auch https://www.figma.com/file/fRpANngWEGEqgV2Gkxv8xi/Bach-project?node-id=0%3A1)
 
+Abbildung 2 zeigt die Startseite, welche der Nutzer angezeigt bekommt, nachdem sich dieser einloggt. Hier befindet sich auf der linken Seite eine Übersicht über alle Module. Daneben befinden sich alle Informationen über das momentan aktive Modul. Diese sind unterteilt in drei Reitern. Eine ToDo-Liste für das Modul, wo der Benutzer Abgaben sowie Termine für das Modul festhalten kann. Um eine Übersicht über die bereits erledigten und ausstehenden ToDos zu haben, können diese in drei verschiedenen Spalten unterteilt werden:
+
+- ToDo - enthält Aufgaben die noch anstehen
+- Doing - enthält Aufgaben, die gerade in Bearbeitung sind
+- Done - enthält Aufgaben, welche erledigt sind
+
+![Figma Prototyp Übersicht](/images/1_team_mystuff/figma_prototyp_uebersicht.jpg?width=40pc)
+
+Zusätzlich zu der ToDo-Liste ist es bei MyStuff auch möglich Daten zu jedem Modul hochzuladen, dazu zählen z. B. Vorlesungsfolien, Übungsaufgaben oder Mitschriften.
+
+Neben den Daten zu dem Modul kann der Benutzer auch Links wie beispielsweise Beweise oder Literaturempfehlungen in der MyStuff-App speichern. Diese erhalten bei der Erstellung automatisch Tags (siehe auch 1.3. Herausforderung) passend zu dem Inhalt der Links. Der Benutzer kann Tags zu den Links auch manuell anpassen.
+Die Links werden mit Tags versehen, damit der Benutzer diese mit einem Filter sortieren kann um so schneller den richtigen Link zu finden (siehe Abb. 3). 
+
+![Figma Prototyp Links](/images/1_team_mystuff/figma_prototyp_links.jpg?width=40pc)
+
+#### 1.7 Umsetzung
+
+#### 1.8 Fazit
