@@ -7,17 +7,17 @@
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
 <title>MyStuff :: Documentation for our Projects and Web Handbook</title>
-<link href=/css/nucleus.css?1643839000 rel=stylesheet>
-<link href=/css/fontawesome-all.min.css?1643839000 rel=stylesheet>
-<link href=/css/hybrid.css?1643839000 rel=stylesheet>
-<link href=/css/featherlight.min.css?1643839000 rel=stylesheet>
-<link href=/css/perfect-scrollbar.min.css?1643839000 rel=stylesheet>
-<link href=/css/auto-complete.css?1643839000 rel=stylesheet>
-<link href=/css/atom-one-dark-reasonable.css?1643839000 rel=stylesheet>
-<link href=/css/theme.css?1643839000 rel=stylesheet>
-<link href=/css/tabs.css?1643839000 rel=stylesheet>
-<link href=/css/hugo-theme.css?1643839000 rel=stylesheet>
-<script src=/js/jquery-3.3.1.min.js?1643839000></script>
+<link href=/css/nucleus.css?1644152287 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1644152287 rel=stylesheet>
+<link href=/css/hybrid.css?1644152287 rel=stylesheet>
+<link href=/css/featherlight.min.css?1644152287 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1644152287 rel=stylesheet>
+<link href=/css/auto-complete.css?1644152287 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1644152287 rel=stylesheet>
+<link href=/css/theme.css?1644152287 rel=stylesheet>
+<link href=/css/tabs.css?1644152287 rel=stylesheet>
+<link href=/css/hugo-theme.css?1644152287 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1644152287></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/projects/_mystuff/>
@@ -32,10 +32,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/js/lunr.min.js?1643839000></script>
-<script type=text/javascript src=/js/auto-complete.js?1643839000></script>
+<script type=text/javascript src=/js/lunr.min.js?1644152287></script>
+<script type=text/javascript src=/js/auto-complete.js?1644152287></script>
 <script type=text/javascript>var baseurl="/"</script>
-<script type=text/javascript src=/js/search.js?1643839000></script>
+<script type=text/javascript src=/js/search.js?1644152287></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -354,6 +354,7 @@ Website Rendering
 <h1>
 MyStuff
 </h1>
+<h4 id=1-abstract>1 Abstract</h4>
 <p>Das Projekt &ldquo;MyStuff&rdquo; ist eine Web-Applikation, gerichtet an Student:innen. Vorbei ist die Zeit wo man als Student verschiedene Programme im Blick haben musste, um sich selbst zu organisieren und um keine Frist(en) zu verpassen. MyStuff ist ein zentraler Platz für das Studium bzw. für die Module eines gewählten Studiengangs, wo wichtige Dokumente, Termine und Quellen eigenständig zusammengetragen werden.</p>
 <h4 id=11-teammitglieder>1.1 Teammitglieder</h4>
 <p><strong>Jördis Liermann - 0576959</strong></p>
@@ -385,29 +386,113 @@ MyStuff
 den HTML-Body der Webseite nach diesen Schlagwörtern. Werden diese gefunden und es werden bspw. (Schlagwörter > 15) gefunden, kategorisiert der Algorithmus den Link zu einem der definierten Tags.</p>
 <p>Bei MyStuff kann der Benutzer dann nach Tags filtern und bekommt eine Liste der externen Quellen zu einem bestimmten Tag. Der Benutzer kann so bspw. bei einer Recherche zu verschiedenen Themen schnell Links speichern und abrufen.</p>
 <h4 id=15-link-zum-projekt>1.5 Link zum Projekt</h4>
-<p>Das Projekt sowie der Sourcecode sind unter folgendem Link zu finden:</p>
-<p><a href=http://localhost:8080>MyStuff Webapplikation</a></p>
+<p>Das Projekt ist unter folgendem Link zu finden:</p>
+<p><a href=https://my-stuff-htw.herokuapp.com/>MyStuff Webapplikation</a></p>
 <h4 id=16-entwurf>1.6 Entwurf</h4>
 <p>Vor der Umsetzung des Projektes wird zunächst eine Liste mit den Features erstellt. Hierfür wurde bei MyStuff eine sogenannte User Story Map verwendet. Dabei werden zunächst verschiedene Aktivitäten (grüne Post-Its) festgelegt, welche eine Art Kategorie bilden. Anschließend werden dieser Aktivität weitere Teilschritte zugeordnet (gelbe Post-Its). Beispielsweise gehören zu der Aktivität: Module bearbeiten, die Unterpunkte Modul erstellen, Modul löschen, Module sortieren (z. B. nach Semester) und Module priorisieren.</p>
 <p><img src="/images/1_team_mystuff/user_story_map.jpg?width=40pc" alt="User Story Map"></p>
-<p>Anschließend werden die Aktivitäten nach Zeit sortiert, d.h. je weiter links eine Aktivität steht desto früher soll diese bei der Entwicklung umgesetzt werden. Die einzelnen Teilschritte der Aktivität werden dabei auch nach ihrer Priorität sortiert - je weiter oben desto wichtiger ist diese.
+<p>Anschließend werden die Aktivitäten nach Zeit sortiert, d.h. je weiter links eine Aktivität steht, desto früher soll diese bei der Entwicklung umgesetzt werden. Die einzelnen Teilschritte der Aktivität werden dabei auch nach ihrer Priorität sortiert - je weiter oben, desto wichtiger ist diese.
 Als letzter Schritt wird eine rote Linie durch die User Story Map gezogen, also gelben Post-Its, welche sich oberhalb dieser Linie befinden, müssen in der fertigen Anwendungen vorhanden sein. Die verbleibenden Features werden erst implementiert, wenn alle Features oberhalb der roten Linie fertig sind und noch genügend Ressourcen für eine Weiterentwicklung vorhanden sind.</p>
 <p>Nachdem alle Features der Anwendungen definiert wurden, wird als nächster Schritt ein erster Entwurf der Oberfläche der Web-App erstellt.
-Für die Erstellung der MyStuff Mockups wurde das Prototyping-Tool Figma verwendet</p>
+Für die Erstellung der MyStuff-Mockups wurde das Prototyping-Tool Figma verwendet.</p>
 <p>(siehe auch <a href="https://www.figma.com/file/fRpANngWEGEqgV2Gkxv8xi/Bach-project?node-id=0%3A1">https://www.figma.com/file/fRpANngWEGEqgV2Gkxv8xi/Bach-project?node-id=0%3A1</a>)</p>
-<p>Abbildung 2 zeigt die Startseite, welche der Nutzer angezeigt bekommt, nachdem sich dieser einloggt. Hier befindet sich auf der linken Seite eine Übersicht über alle Module. Daneben befinden sich alle Informationen über das momentan aktive Modul. Diese sind unterteilt in drei Reitern. Eine ToDo-Liste für das Modul, wo der Benutzer Abgaben sowie Termine für das Modul festhalten kann. Um eine Übersicht über die bereits erledigten und ausstehenden ToDos zu haben, können diese in drei verschiedenen Spalten unterteilt werden:</p>
+<p>Die Abbildung weiter unten zeigt die Startseite, welche der Nutzer angezeigt bekommt, nachdem sich dieser einloggt. Hier befindet sich auf der linken Seite eine Übersicht über alle Module. Daneben befinden sich alle Informationen über das momentan aktive Modul. Diese sind unterteilt in drei Reitern. Eine ToDo-Liste für das Modul, wo der Benutzer Abgaben sowie Termine für das Modul festhalten kann. Um eine Übersicht über die bereits erledigten und ausstehenden ToDos zu haben, können diese in drei verschiedenen Spalten unterteilt werden:</p>
 <ul>
 <li>ToDo - enthält Aufgaben die noch anstehen</li>
 <li>Doing - enthält Aufgaben, die gerade in Bearbeitung sind</li>
 <li>Done - enthält Aufgaben, welche erledigt sind</li>
 </ul>
 <p><img src="/images/1_team_mystuff/figma_prototyp_uebersicht.jpg?width=40pc" alt="Figma Prototyp Übersicht"></p>
-<p>Zusätzlich zu der ToDo-Liste ist es bei MyStuff auch möglich Daten zu jedem Modul hochzuladen, dazu zählen z. B. Vorlesungsfolien, Übungsaufgaben oder Mitschriften.</p>
+<p>Zusätzlich zu der ToDo-Liste ist es bei MyStuff auch möglich, Daten zu jedem Modul hochzuladen, dazu zählen z. B. Vorlesungsfolien, Übungsaufgaben oder Mitschriften.</p>
 <p>Neben den Daten zu dem Modul kann der Benutzer auch Links wie beispielsweise Beweise oder Literaturempfehlungen in der MyStuff-App speichern. Diese erhalten bei der Erstellung automatisch Tags (siehe auch 1.3. Herausforderung) passend zu dem Inhalt der Links. Der Benutzer kann Tags zu den Links auch manuell anpassen.
 Die Links werden mit Tags versehen, damit der Benutzer diese mit einem Filter sortieren kann um so schneller den richtigen Link zu finden (siehe Abb. 3).</p>
 <p><img src="/images/1_team_mystuff/figma_prototyp_links.jpg?width=40pc" alt="Figma Prototyp Links"></p>
 <h4 id=17-umsetzung>1.7 Umsetzung</h4>
-<h4 id=18-fazit>1.8 Fazit</h4>
+<h5 id=171-backend>1.7.1 Backend</h5>
+<p>Wie bereits in Abschnitt 1.2 erwähnt, wird das Backend in Node.JS-Entwicklungsumgebung mit Hilfe des Express.JS-Framework entwickelt. Die NoSql-Datenbank wurde mit Hilfe von MongoDB-Datenbank (<a href=https://www.mongodb.com/>https://www.mongodb.com/</a>) auf der Cloud bereitgestellt.</p>
+<p>Folgende Abbildung stellt eine Übersicht über die Verzeichnishierarchie des Backends dar:</p>
+<p><img src="/images/1_team_mystuff/struktur.jpg?width=15pc" alt="Struktur des Backends"></p>
+<p>Das Backend wird wie folgt aufgeteilt:</p>
+<ul>
+<li><strong>backend</strong>-Verzeichnis enthält alle Quellcodes des MyStuff-Project, die für die Ausführung des Projekts benötigt werden.</li>
+<li><strong>node_modules</strong> enthält Quellcodes der verwendeten Module bzw. Bibliotheken, die in package.js-Datei definiert werden.</li>
+<li><strong>package.json</strong> wird benutzt, um installierte Abhängigkeiten (Dependencies) zu überprüfen. Außerdem enthält diese Datei mehrere nützlichen Skripte, die z.B für Start, Build oder Test des Projekts verwendet werden.</li>
+<li><strong>models</strong>-Verzeichnis enthält alle Datenschema-Schnittstelle der Datenbank. Mit dem Schema werden Felder, die in jedem Dokument sowie deren Validierungsanforderungen und Standardwerte definiert.</li>
+<li><strong>routes</strong>-Verzeichnis enthält die Kontrolle Komponente des Backends. Alle REST-Anfragen werden hier entsprechend der Klasse gefiltert und verwaltet.</li>
+<li><strong>app.js</strong>-Datei enthält die Start-Skripte des Backends. Hierzu werden die Express.JS-Framework als auch mongoose-Modul, das für die Anbindung der MongoDB-Datenbank erforderlich ist, definiert und aufgerufen. Außerdem werden hier die Umleitungen der HTTP-Anfragen zu der entsprechenden Kontrolle-Datei in der routes-Verzeichnis definiert.</li>
+</ul>
+<p>Nach der erforderlichen Konfiguration des Backends in der app.js-Datei werden Datenschema im models-Verzeichnis definiert. Insgesamt wurde drei Modellen für drei Instanzen im Projekt umgesetzt: <strong>User</strong>, <strong>Todo</strong> und <strong>Module</strong>. Folgende Diagramm zeigt die Beziehungen zwischen den Modellen.</p>
+<p><img src="/images/1_team_mystuff/uml.jpg?width=30pc" alt="UML Diagramm"></p>
+<p>Nach der Definition der Datenmodellen werden die Route umgesetzt. Im folgenden werden einen Überblick über die erforderlichen Routen, ihre Aufgaben und die HTTP-Methode, die für den Zugriff auf sie verwendet wird.</p>
+<p>Services in der Users-Route:
+<img src="/images/1_team_mystuff/users.jpg?width=40pc" alt="Services in der Users-Route"></p>
+<p>Services in der Modules-Route:
+<img src="/images/1_team_mystuff/modules.jpg?width=40pc" alt="Services in der Modules-Route"></p>
+<p>Services in der Todos-Route:
+<img src="/images/1_team_mystuff/todos.jpg?width=40pc" alt="Services in der Todos-Route"></p>
+<p>Die Backend-Implementierung ist unter folgendem Link zu finden:
+<a href=https://github.com/Bachdz/MyStuffBackend>Backend-Implementierung</a></p>
+<h5 id=172-frontend>1.7.2 Frontend</h5>
+<p>Gemäß Abschnitt 1.2 wird für die Entwicklung der Benutzeroberfläche das Framework React.JS benötigt. Um eine Entwicklungsumgebung mit React zu erstellen, kommt das Tool Create React App in Einsatz. Dieses Tool wird mit NPM (Node Package Manager) von Node.js installiert.
+Als erstes wird wie die Umsetzung des Backends die Aufteilung der Komponente durchgeführt. Dadurch kann die Wiederverwendbarkeit des Codes möglichst maximieren und die Wartung des Projekts einfacher durchführen.</p>
+<p>Folgende Abbildung veranschaulicht die Verzeichnishierarchie des Frontends:</p>
+<p><img src="/images/1_team_mystuff/frontend.jpg?width=15pc" alt="Struktur des Frontends"></p>
+<ul>
+<li><strong>node_modules</strong> enthält den Quellcode des React-Frameworks und verwendeten Module bzw. Bibliothek, die in package.json definiert werden.</li>
+<li><strong>public</strong> enthält HTML-Dateien und Komponente wie Bilder, die clientseitig gerendert werden sollen.</li>
+<li><strong>src</strong> ist der Ort, wo die Projektentwicklung stattfindet. Es enthält alle Komponente des Projekts, die in Javaskript geschrieben werden. Es beinhaltet Login-Komponente und Komponente vom Mainscreen wie Modules, Todos, Links. Darüber hinaus liegen unter dem css-Verzeichnis die zu den Komponente zugehörigen CSS-Dateien.</li>
+<li>Die <strong>index.js</strong>-Datei ist der Startpunkt beim Kompilieren der Anwendung, bei dem die App.js-Komponente aufgerufen wird.</li>
+<li><strong>package.json</strong> wird für die Definition der installierten Abhängigkeiten verwendet.</li>
+<li><strong>package-lock.json</strong> wird anhand der Informationen in package.son automatisch generiert.</li>
+</ul>
+<p>Die Art und Weise, wie Komponenten in React miteinander anhängig sind, sind state (Zustand) und props (Eigenschaft). Eine Komponente besitzt ihr eigenes Zustand bzw. Instance-Daten. z.B. User-Komponente besitzt Zustand wie username: String.
+Information zwischen Komponenten können mittels props transportiert werden. z.B. Die Mainscreen-Komponente muss z.B. in der Lage sein, die geloggte Information der User-Komponente anzuzeigen. Daher kann die User-Komponente diese Information an die Mainscreen-Komponente weitergeben, die dann in der Mainscreen-Komponente mit Hilfe von props. zugänglich sein wird.
+In der folgenden Abbildung ist eine Übersicht über die Komponente von der Main-Seite und ihre Beziehungen gegeben. Die wichtigen Daten im Zustand jeder Komponente und die props, die von einer Komponente zur anderen übertragen werden, sind ebenfalls abgebildet.</p>
+<p>Komponenten des Main-Screens und ihre Beziehungen:
+<img src="/images/1_team_mystuff/komponente.jpg?width=50pc" alt="Komponenten des Main-Screens und ihre Beziehungen"></p>
+<p>Die komplette Implementation des Frontends ist auf Github zu finden:
+<a href=https://github.com/Bachdz/MyStuffFrontend>Frontend-Implementierung</a></p>
+<p>Im Folgenden sind Bilder von Seiten sehen, die für das Frontend implementiert wurden:</p>
+<p>Welcome-Seite:
+<img src="/images/1_team_mystuff/welcome.jpg?width=50pc" alt=Welcome-Seite></p>
+<p>Login-Seite:
+<img src="/images/1_team_mystuff/login.jpg?width=50pc" alt=Login-Seite></p>
+<p>Main-Seite in Todos-Tab:
+<img src="/images/1_team_mystuff/main_todos.jpg?width=50pc" alt="Main-Seite in Todos-Tab"></p>
+<p>Main-Seite in Links-Tab:
+<img src="/images/1_team_mystuff/main_links.jpg?width=50pc" alt="Main-Seite in Links-Tab"></p>
+<h4 id=18-cicd>1.8 CI/CD</h4>
+<p>Lorem Ipsum</p>
+<h4 id=19-javascript-end-to-end-testing-framework-cypress>1.9 JavaScript End to End Testing Framework: Cypress</h4>
+<p>Die Tests wurden mit Cypress durchgeführt. Cypress ist ein Framework, mit dem End-to-End-Tests durchgeführt werden können.</p>
+<h5 id=191-installation>1.9.1 Installation</h5>
+<p>Um Cypress nutzen zu können, muss es zunächst installiert werden. Die Installation erfordert im ersten Schritt die lokale Installation von <strong>Node</strong>. Danach muss cypress in dem Projekt, in dem man die Tests schreiben möchte, generiert werden. In unserem Fall wurde cypress im Frontend installiert, da mit cypress das Frontend getestet werden kann. Mit diesem Befehl <em><strong>npm install cypress &ndash;save-dev</strong></em> kann cypress automatisch in das gewünschte Projekt installiert werden.</p>
+<p>Die Installation generiert automatisch einen Ordner namens cypress im Projekt neu:
+<img src="/images/1_team_mystuff/cypress.jpg?width=50pc" alt=Cypress></p>
+<p>Die Tests werden im Ordner Integration von cypress geschrieben:
+<img src="/images/1_team_mystuff/integration.jpg?width=50pc" alt=Integration></p>
+<p>Struktur eines Tests aus Cypress:</p>
+<pre tabindex=0><code>describe(&quot;Abmelden&quot;, function () {
+   before(() =&gt; {
+       cy.visit(&quot;https://my-stuff-htw.herokuapp.com/login&quot;);
+   });
+   describe('Benutzer auslogen', function () {
+       it(&quot;logout -&gt; Alain&quot;, function () {
+
+           cy.get(':nth-child(1) &gt; a &gt; #forward').click();
+
+       });
+   });
+});
+</code></pre><h5 id=192-ausführung-von-tests>1.9.2 Ausführung von Tests:</h5>
+<p>Die Ausführung der Tests wird über den folgenden Befehl durchgeführt: <em><strong>npx cypress open</strong></em>.
+Nach der Ausführung dieses Befehls sieht man die Benutzeroberfläche von Cypress mit den verschiedenen geschriebenen Tests.</p>
+<p>Folgende Tests wurden geschrieben: <em>new-modul-add</em>, <em>abmelden</em>, <em>create-user</em>, <em>login</em>
+<img src="/images/1_team_mystuff/ausfuehrung.jpg?width=50pc" alt=Ausführung></p>
+<p>Es ist möglich, die Tests einzeln auszuführen oder alle Tests direkt auszuführen. Die Ergebnisse bleiben gleich, da die Tests entweder bestehen oder bei einem Fehler fehlschlagen.</p>
+<p><img src="/images/1_team_mystuff/tests.jpg?width=50pc" alt=Tests>
+Auf diesem Bild ist zu bemerken, dass die ausgeführten Tests alle fehlerfrei durchlaufen werden. Erfolgreiche Tests sind grün markiert, während fehlgeschlagene Tests rot markiert sind.</p>
+<h4 id=2-fazit>2 Fazit</h4>
 <footer class=footline>
 </footer>
 </div>
@@ -420,16 +505,16 @@ Die Links werden mit Tags versehen, damit der Benutzer diese mit einem Filter so
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/js/clipboard.min.js?1643839000></script>
-<script src=/js/perfect-scrollbar.min.js?1643839000></script>
-<script src=/js/perfect-scrollbar.jquery.min.js?1643839000></script>
-<script src=/js/jquery.sticky.js?1643839000></script>
-<script src=/js/featherlight.min.js?1643839000></script>
-<script src=/js/highlight.pack.js?1643839000></script>
+<script src=/js/clipboard.min.js?1644152287></script>
+<script src=/js/perfect-scrollbar.min.js?1644152287></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1644152287></script>
+<script src=/js/jquery.sticky.js?1644152287></script>
+<script src=/js/featherlight.min.js?1644152287></script>
+<script src=/js/highlight.pack.js?1644152287></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/js/modernizr.custom-3.6.0.js?1643839000></script>
-<script src=/js/learn.js?1643839000></script>
-<script src=/js/hugo-learn.js?1643839000></script>
+<script src=/js/modernizr.custom-3.6.0.js?1644152287></script>
+<script src=/js/learn.js?1644152287></script>
+<script src=/js/hugo-learn.js?1644152287></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 <script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-105947713-1','auto'),ga('send','pageview')</script>
