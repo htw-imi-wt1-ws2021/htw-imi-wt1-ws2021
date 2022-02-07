@@ -4,9 +4,9 @@ description : "Authentication methods on the web"
 tags: ["authentication", "authentication methods"]
 ---
 
-After an authentication type has been chosen, the next step is to determine what method of authentication on the web will be used. A website client is in constant communication with the webserver, sending a request each time a resource is needed. Each of those request needs a proof of authentication to make sure sensitive data cannot be accessed by unauthorized user. Instead of making the user authenticate themselves for each request to the server, there are different ways to store and communicate the credentials safely with the server.
+After an authentication type has been chosen, the next step is to determine what method of authentication on the web will be used. When a website is using server side rendering, the client is in constant communication with the webserver, sending a request each time a resource is needed. Each of those request needs a proof of authentication to make sure sensitive data cannot be accessed by unauthorized user. Instead of making the user authenticate themselves for each request to the server, there are different ways to store and communicate the credentials safely with the server.
 
-In the following parts different authentication methods and their workflow are explained on a general level without going into specific implementation details. Pros and cons of each method are stated to give an idea of when these methods are useful and what security concerns to look out for.
+In the following parts different authentication methods and their workflow are explained on a general level without going into specific implementation details. Pros and cons of each method are stated to give an idea of when these methods are useful and what security concerns to look out for. HTTP Basic and Digest are mentioned for a complete overview but should not be used anymore because of security issues. All other methods are valid options that can be used.
 
 ### 3.1 HTTP Basic Authentication and Digest
 Authentication is built into the HTTP Protocol and one of the simplest authentication methods. The server returns a 401 Unauthorized together with a www-Authenticate header telling the client what kind of authentication is required. The options are HTTP Basic or HTTP Digest.
