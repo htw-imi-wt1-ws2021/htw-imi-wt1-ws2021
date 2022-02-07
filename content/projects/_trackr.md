@@ -52,13 +52,13 @@ Wählt man zwei Versionen eines Dokuments aus, kann man sich die Unterschiede be
 
 Die Anwendung ist so konzipiert, dass zukünftig ermöglicht werden soll, dass Ordner freigegeben und mit anderen geteilt werden können, um gemeinsam darin zu arbeiten. So könnte eine Projektgruppe gemeinsam an Texten arbeiten, indem sich jeder den aktuellen Stand runterladen, bearbeiten und als neue Version hochladen könnte. Im Rahmen der verbleibenden Wochen wird das Collaboration-Feature aber nicht mehr umgesetzt.
 
-![Storyboard](/images/4_team_trackr/storyboard.mov?width=60pc)
+![Storyboard](/images/4_team_trackr/storyboard.mov?width=40pc)
 
 ## 8 Verlauf & Schritte
 
 In der ersten Phase von ca. zwei Wochen wurden die Entscheidungen bezüglich der unterstützten Dateiformate sowie der eingesetzten Technologien getroffen werden. Seitdem wird mithilfe von wöchentlichen Sprints die Anwendung implementiert. Wir verzichten dabei aus Zeitgründen auf die Erstellung und Evaluierung eines Prototyps.
 
-![User Story Map](content/images/4_team_trackr/user-story-map.png?width=60pc)
+![User Story Map](/images/4_team_trackr/user-story-map.png?width=40pc)
 
 ## 9 CI/CD
 
