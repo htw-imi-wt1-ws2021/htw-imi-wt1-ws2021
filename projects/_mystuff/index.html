@@ -7,17 +7,17 @@
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
 <title>MyStuff :: Documentation for our Projects and Web Handbook</title>
-<link href=/css/nucleus.css?1644255126 rel=stylesheet>
-<link href=/css/fontawesome-all.min.css?1644255126 rel=stylesheet>
-<link href=/css/hybrid.css?1644255126 rel=stylesheet>
-<link href=/css/featherlight.min.css?1644255126 rel=stylesheet>
-<link href=/css/perfect-scrollbar.min.css?1644255126 rel=stylesheet>
-<link href=/css/auto-complete.css?1644255126 rel=stylesheet>
-<link href=/css/atom-one-dark-reasonable.css?1644255126 rel=stylesheet>
-<link href=/css/theme.css?1644255126 rel=stylesheet>
-<link href=/css/tabs.css?1644255126 rel=stylesheet>
-<link href=/css/hugo-theme.css?1644255126 rel=stylesheet>
-<script src=/js/jquery-3.3.1.min.js?1644255126></script>
+<link href=/css/nucleus.css?1644264048 rel=stylesheet>
+<link href=/css/fontawesome-all.min.css?1644264048 rel=stylesheet>
+<link href=/css/hybrid.css?1644264048 rel=stylesheet>
+<link href=/css/featherlight.min.css?1644264048 rel=stylesheet>
+<link href=/css/perfect-scrollbar.min.css?1644264048 rel=stylesheet>
+<link href=/css/auto-complete.css?1644264048 rel=stylesheet>
+<link href=/css/atom-one-dark-reasonable.css?1644264048 rel=stylesheet>
+<link href=/css/theme.css?1644264048 rel=stylesheet>
+<link href=/css/tabs.css?1644264048 rel=stylesheet>
+<link href=/css/hugo-theme.css?1644264048 rel=stylesheet>
+<script src=/js/jquery-3.3.1.min.js?1644264048></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/projects/_mystuff/>
@@ -32,10 +32,10 @@
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script type=text/javascript src=/js/lunr.min.js?1644255126></script>
-<script type=text/javascript src=/js/auto-complete.js?1644255126></script>
+<script type=text/javascript src=/js/lunr.min.js?1644264048></script>
+<script type=text/javascript src=/js/auto-complete.js?1644264048></script>
 <script type=text/javascript>var baseurl="/"</script>
-<script type=text/javascript src=/js/search.js?1644255126></script>
+<script type=text/javascript src=/js/search.js?1644264048></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -552,11 +552,29 @@ In der folgenden Abbildung ist eine Übersicht über die Komponente von der Main
 <img src="/images/1_team_mystuff/main_todos.jpg?width=50pc" alt="Main-Seite in Todos-Tab"></p>
 <p>Main-Seite in Links-Tab:
 <img src="/images/1_team_mystuff/main_links.jpg?width=50pc" alt="Main-Seite in Links-Tab"></p>
-<h4 id=18-cicd>1.8 CI/CD</h4>
-<p>Lorem Ipsum</p>
-<h4 id=19-javascript-end-to-end-testing-framework-cypress>1.9 JavaScript End to End Testing Framework: Cypress</h4>
+<h5 id=173-cicd-pipeline--deployment-prozess>1.7.3 CI/CD Pipeline & Deployment-Prozess</h5>
+<p>Die Pipeline wurde mit <strong>Heroku</strong> eingerichtet. Heroku ist eine Platform-as-a-Service Anbieter, der den ganzen Deployment- und Testprozess für eine Applikation mit wenigen Klicks ermöglicht.
+Als Erstes wird ein Konto auf dem Plattform eröffnet. Nach der erfolgreichen Erstellung des Konto wird der Nutzer auf die Dashboard-Seite umgeleitet. Um eine neue App zu deployen, wird auf die Schaltfläche <em>New → Create new app</em> geklickt.</p>
+<p>Erstellung neuer App auf Heroku:
+<img src="/images/1_team_mystuff/ci1.jpg?width=50pc" alt="Erstellung neuer App auf Heroku"></p>
+<p>Danach muss ein App-Name eingegeben und eine Server-Region ausgewählt werden. Als Erstes wird das Backend-Deployment eingerichtet. In diesem Fall heißt die App my-stuff-backend und Region wird als Europe ausgewählt. Die Erstellung einer neuen App auf Heroku wurde damit durchgeführt. Danach wird man direkt in die Einstellungsseite umgeleitet, wo eine Deployment-Methode ausgewählt werden kann. Der gesamte Code von MyStuff liegt auf GitHub, deshalb wird hier GitHub als Deployment-Methode ausgewählt. Heroku wird sich mit unserem GitHub-Konto verlinken und danach muss eine Repository im Konto ausgewählt werden.</p>
+<p>Auswahl der Deployment-Methode mit GitHub:
+<img src="/images/1_team_mystuff/ci2.jpg?width=50pc" alt="Auswahl der Deployment-Methode mit GitHub"></p>
+<p>Nachdem das Repository erfolgreich mit Heroku verlinkt ist, kann ein Branch ausgewählt werden, um zu deployen. Unser master-Branch wird dabei ausgewählt. Außerdem kann hier die Option <em>Automatic deploys</em> für ein bestimmten Branch ein/ausgeschaltet werden. Dies bedeutet, wenn ein neuer Commit in den Branch kommt, wird die Pipeline das automatisch erkennen und einen neuen Deployment-Prozess durchführen. Falls diese noch Tests erkennen, werden diese ebenfalls durchgeführt. Als letztes wird beim <em>Manual deploy</em>-Bereich den gewünschten Branchs ausgewählt und auf die Schaltfläche <em>Deploy Branch</em> geklickt. Damit wird der Prozess gestartet.</p>
+<p>Auswahl des Branchs für Deployment-Prozess:
+<img src="/images/1_team_mystuff/ci3.jpg?width=50pc" alt="Auswahl des Branchs für Deployment-Prozess"></p>
+<p>Um den Prozess richtig auszuführen, muss ein Buildpack hinzugefügt werden. Dies liegt im Tab <em>Settings</em>.
+Fürs Backend haben wir das Paket heroku/nodejs verwendet. Fürs Frontend haben wir das create-react-app-buildpack aus GitHub genommen. Dieses Paket liegt unter <a href=https://github.com/mars/create-react-app-buildpack.git>https://github.com/mars/create-react-app-buildpack.git</a></p>
+<p>Folgende Abbildungen geben einen Überblick für den Build-Status des Backends und Frontends:</p>
+<p>Übersicht des Deployment-Prozess des Backends:
+<img src="/images/1_team_mystuff/ci4.jpg?width=50pc" alt="Übersicht des Deployment-Prozess des Backends"></p>
+<p>Übersicht des Deployment-Prozess des Frontends:
+<img src="/images/1_team_mystuff/ci5.jpg?width=50pc" alt="Übersicht des Deployment-Prozess des Frontends"></p>
+<p><strong>Das Backend wird unter der URL-Adresse</strong>: <a href=https://my-stuff-backend.herokuapp.com/>https://my-stuff-backend.herokuapp.com/</a> <strong>freigegeben</strong>.</p>
+<p><strong>Ebenfalls ist das Frontend unter</strong> <a href=https://my-stuff-htw.herokuapp.com/>https://my-stuff-htw.herokuapp.com/</a> <strong>zu erreichen</strong>.</p>
+<h4 id=18-javascript-end-to-end-testing-framework-cypress>1.8 JavaScript End to End Testing Framework: Cypress</h4>
 <p>Die Tests wurden mit Cypress durchgeführt. Cypress ist ein Framework, mit dem End-to-End-Tests durchgeführt werden können.</p>
-<h5 id=191-installation>1.9.1 Installation</h5>
+<h5 id=181-installation>1.8.1 Installation</h5>
 <p>Um Cypress nutzen zu können, muss es zunächst installiert werden. Die Installation erfordert im ersten Schritt die lokale Installation von <strong>Node</strong>. Danach muss cypress in dem Projekt, in dem man die Tests schreiben möchte, generiert werden. In unserem Fall wurde cypress im Frontend installiert, da mit cypress das Frontend getestet werden kann. Mit diesem Befehl <em><strong>npm install cypress &ndash;save-dev</strong></em> kann cypress automatisch in das gewünschte Projekt installiert werden.</p>
 <p>Die Installation generiert automatisch einen Ordner namens cypress im Projekt neu:
 <img src="/images/1_team_mystuff/cypress.jpg?width=50pc" alt=Cypress></p>
@@ -575,7 +593,7 @@ In der folgenden Abbildung ist eine Übersicht über die Komponente von der Main
        });
    });
 });
-</code></pre><h5 id=192-ausführung-von-tests>1.9.2 Ausführung von Tests:</h5>
+</code></pre><h5 id=182-ausführung-von-tests>1.8.2 Ausführung von Tests:</h5>
 <p>Die Ausführung der Tests wird über den folgenden Befehl durchgeführt: <em><strong>npx cypress open</strong></em>.
 Nach der Ausführung dieses Befehls sieht man die Benutzeroberfläche von Cypress mit den verschiedenen geschriebenen Tests.</p>
 <p>Folgende Tests wurden geschrieben: <em>new-modul-add</em>, <em>abmelden</em>, <em>create-user</em>, <em>login</em>
@@ -583,7 +601,9 @@ Nach der Ausführung dieses Befehls sieht man die Benutzeroberfläche von Cypres
 <p>Es ist möglich, die Tests einzeln auszuführen oder alle Tests direkt auszuführen. Die Ergebnisse bleiben gleich, da die Tests entweder bestehen oder bei einem Fehler fehlschlagen.</p>
 <p><img src="/images/1_team_mystuff/tests.jpg?width=50pc" alt=Tests>
 Auf diesem Bild ist zu bemerken, dass die ausgeführten Tests alle fehlerfrei durchlaufen werden. Erfolgreiche Tests sind grün markiert, während fehlgeschlagene Tests rot markiert sind.</p>
-<h4 id=2-fazit>2 Fazit</h4>
+<h4 id=19-fazit>1.9 Fazit</h4>
+<p>Die Planung sowie die Umsetzung anhand eines Prototyps wurde bei dem Projekt MyStuff erfolgreich umgesetzt. Der Prototyp enthält dabei die Grundlegenden Funktionalitäten, wie das Erstellen und Löschen von Modulen sowie das Anlegen und Bearbeiten von ToDos. Auch können neue Benutzer angelegt werden. Die Daten von den einzelnen Benutzern werden dabei erfolgreich in der MongoDB gespeichert. Des Weiteren konnte eine CI/CD-Pipeline erfolgreich aufgesetzt werden. Außerdem ist es möglich automatisierte Test durchzuführen.</p>
+<p>Die Implementierung der Links mit automatisierten Tags konnte auch Zeitgründen nicht mehr komplett umgesetzt werden.</p>
 <footer class=footline>
 </footer>
 </div>
@@ -596,16 +616,16 @@ Auf diesem Bild ist zu bemerken, dass die ausgeführten Tests alle fehlerfrei du
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/js/clipboard.min.js?1644255126></script>
-<script src=/js/perfect-scrollbar.min.js?1644255126></script>
-<script src=/js/perfect-scrollbar.jquery.min.js?1644255126></script>
-<script src=/js/jquery.sticky.js?1644255126></script>
-<script src=/js/featherlight.min.js?1644255126></script>
-<script src=/js/highlight.pack.js?1644255126></script>
+<script src=/js/clipboard.min.js?1644264048></script>
+<script src=/js/perfect-scrollbar.min.js?1644264048></script>
+<script src=/js/perfect-scrollbar.jquery.min.js?1644264048></script>
+<script src=/js/jquery.sticky.js?1644264048></script>
+<script src=/js/featherlight.min.js?1644264048></script>
+<script src=/js/highlight.pack.js?1644264048></script>
 <script>hljs.initHighlightingOnLoad()</script>
-<script src=/js/modernizr.custom-3.6.0.js?1644255126></script>
-<script src=/js/learn.js?1644255126></script>
-<script src=/js/hugo-learn.js?1644255126></script>
+<script src=/js/modernizr.custom-3.6.0.js?1644264048></script>
+<script src=/js/learn.js?1644264048></script>
+<script src=/js/hugo-learn.js?1644264048></script>
 <script src=https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
 <script>(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-105947713-1','auto'),ga('send','pageview')</script>
