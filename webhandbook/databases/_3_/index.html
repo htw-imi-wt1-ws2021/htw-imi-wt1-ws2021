@@ -6,7 +6,7 @@
 <meta name=description content="Documentation for our Projects and Web Handbook">
 <meta name=author content="Mathieu Cornic">
 <link rel=icon href=/images/favicon.png type=image/png>
-<title>5 Integration and Considerations :: Documentation for our Projects and Web Handbook</title>
+<title> :: Documentation for our Projects and Web Handbook</title>
 <link href=/css/nucleus.css?1644249257 rel=stylesheet>
 <link href=/css/fontawesome-all.min.css?1644249257 rel=stylesheet>
 <link href=/css/hybrid.css?1644249257 rel=stylesheet>
@@ -20,7 +20,7 @@
 <script src=/js/jquery-3.3.1.min.js?1644249257></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
-<body data-url=/webhandbook/css_processing/_5_integration/>
+<body data-url=/webhandbook/databases/_3_/>
 <nav id=sidebar>
 <div id=header-wrapper>
 <div id=header>
@@ -129,8 +129,7 @@ CI/CD
 </li>
 </ul>
 </li>
-<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class="dd-item
-parent">
+<li data-nav-id=/webhandbook/css_processing/ title="CSS Processing" class=dd-item>
 <a href=/webhandbook/css_processing/>
 CSS Processing
 </a>
@@ -155,7 +154,7 @@ CSS Processing
 4 Popular Tools
 </a>
 </li>
-<li data-nav-id=/webhandbook/css_processing/_5_integration/ title="5 Integration and Considerations" class="dd-item active">
+<li data-nav-id=/webhandbook/css_processing/_5_integration/ title="5 Integration and Considerations" class=dd-item>
 <a href=/webhandbook/css_processing/_5_integration/>
 5 Integration and Considerations
 </a>
@@ -167,7 +166,8 @@ CSS Processing
 </li>
 </ul>
 </li>
-<li data-nav-id=/webhandbook/databases/ title=Databases class=dd-item>
+<li data-nav-id=/webhandbook/databases/ title=Databases class="dd-item
+parent">
 <a href=/webhandbook/databases/>
 Databases
 </a>
@@ -176,7 +176,7 @@ Databases
 <a href=/webhandbook/databases/_2_/>
 </a>
 </li>
-<li data-nav-id=/webhandbook/databases/_3_/ title class=dd-item>
+<li data-nav-id=/webhandbook/databases/_3_/ title class="dd-item active">
 <a href=/webhandbook/databases/_3_/>
 </a>
 </li>
@@ -342,19 +342,16 @@ Website Rendering
 </span>
 <span id=toc-menu><i class="fas fa-list-alt"></i></span>
 <span class=links>
-<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/webhandbook/>Webhandbook</a> > <a href=/webhandbook/css_processing/>CSS Processing</a> > 5 Integration and Considerations
+<a href=/>WT1 WEB APPLICATIONS</a> > <a href=/webhandbook/>Webhandbook</a> > <a href=/webhandbook/databases/>Databases</a> >
 </span>
 </div>
 <div class=progress>
 <div class=wrapper>
 <nav id=TableOfContents>
 <ul>
-<li>
-<ul>
-<li><a href=#integration>Integration</a></li>
-<li><a href=#considerations>Considerations</a></li>
-</ul>
-</li>
+<li><a href=#mongodb>MongoDB</a></li>
+<li><a href=#cassandra>Cassandra</a></li>
+<li><a href=#redis>Redis</a></li>
 </ul>
 </nav>
 </div>
@@ -365,22 +362,24 @@ Website Rendering
 </div>
 <div id=body-inner>
 <h1>
-5 Integration and Considerations
 </h1>
-<h3 id=integration>Integration</h3>
-<p>The presented processing tools all come with command-line interfaces, which take multiple input files and usually a config to generate or transform CSS.</p>
-<p>Usually, these transformations are done in a more complex build pipeline for the entire project, using a bundler or task-runner. Especially Sass and Less have multiple implementations in different languages. Which one is most suitable often depends on the bundler or task-runner that is being used.</p>
-<h3 id=considerations>Considerations</h3>
-<p>CSS processors are optional tools that offer a wide array of capabilities for different parts of a web project. Because many modern web projects use a bundler or task-runner already, including these tools is mostly trivial.</p>
-<p>Optimizations such as minification are easy to integrate and can instantly improve a web page&rsquo;s performance. They don&rsquo;t require the adaption of a different language or different patterns.</p>
-<p>On the other hand, Authoring features are only as good as how they are used. If a project can benefit from these features has to be assessed the same way other programming patterns and frameworks are.</p>
+<h1 id=nosql-databases>NoSQL databases</h1>
+<p>Web services that operate in real time and process diverse datasets pose a challenge when it comes to storage (Kaufmann and Meier, 2019). In these cases, NoSQL databases can provide a solution: They are easily scalable, allow fast querying and are said to make work for developers easier (Schaefer, 2021). Unlike what one might expect, the “No” in NoSQL stands for “not only”.</p>
+<p>The rigid structures of traditional relational databases can be limiting for certain kinds of data and sometimes not all features of relational databases are needed (Lai, 2009). For example, when handling Big Data, processing needs to be extremely fast – these kinds of volumes are often not easy to handle with traditional relational database systems (Lai, 2009).</p>
+<p>Different kinds of NoSQL databases exist: They can be for example based on documents, graphs, key-value pairs or tuples. Each of these has advantages when applied in certain use cases. In the following, three important kinds (Kamaruzzaman, 2021) of NoSQL databases will be introduced.</p>
+<h2 id=mongodb>MongoDB</h2>
+<p>MongoDB is a document-based database program. For many developers, it is the go-to database solution for modern web applications, for example in conjunction with frontend technologies Vue.js, Angular or React. MongoDB can be used under the Server Side Public License (SSPL) which was introduced by the MongoDB Inc. itself – although it is intended as an open source license, it is not recognized as such by the Open Source Initiative.</p>
+<h2 id=cassandra>Cassandra</h2>
+<p>Cassandra is a so-called Wide Column Store, a database that uses columns and rows like a relational database but the names and format of the columns is not fixed and can vary. It was originally developed by Facebook as a new search feature but has since moved on to be developed as an open source project by the Apache Foundation (Strauch et al., 2011). One of Cassandra&rsquo;s main features is the ability to distribute data over different nodes and data centers. It is therefore designed to manage large amounts of data.</p>
+<h2 id=redis>Redis</h2>
+<p>In Redis, all data is stored in-memory which leads to read and write operations being executed at high speed (Da Silva and Tavares, 2015). The main idea behind this is that Redis combines functionalities as a data store and a cache. It stores key-value pairs and is mainly used for applications where data changes often and its size fits the available memory. Since Redis makes use of a range of data types, such as “Strings, Hashes, Lists, Sets, Sorted Sets, Bitmaps and HyperLogLogs” (Da Silva and Tavares, 2015, p. 1), the data to store should also fit the data types.</p>
 <footer class=footline>
 </footer>
 </div>
 </div>
 <div id=navigation>
-<a class="nav nav-prev" href=/webhandbook/css_processing/_4_popular_tools/ title="4 Popular Tools"> <i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/webhandbook/css_processing/_6_literature/ title="6 Literature" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-prev" href=/webhandbook/databases/_2_/ title> <i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/webhandbook/databases/_1_/ title="1 History and Terminology" style=margin-right:0><i class="fa fa-chevron-right"></i></a>
 </div>
 </section>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
