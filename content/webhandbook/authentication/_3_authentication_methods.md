@@ -11,15 +11,19 @@ In the following parts different authentication methods and their workflow are e
 ### 3.1 HTTP Basic Authentication and Digest
 Authentication is built into the HTTP Protocol and one of the simplest authentication methods. The server returns a 401 Unauthorized together with a www-Authenticate header telling the client what kind of authentication is required. The options are HTTP Basic or HTTP Digest.
 
-__HTTP Basic__
+__HTTP Basic__ \
 The username and password are concatenated and encoded with Base64. The encoded string is then sent together with the Authorization header to the server. The server compares the credentials with the database and return a 200 OK if the credentials are valid.
 
 This method is fast, easy to implement and supported in all browser. However, the password and username are only encoded and not encrypted in this method, thus making it vulnerable to attacks that could capture the user’s credentials in transit. It should not be used anymore due to its weak security but is still employed more often than it should be.
 
-__HTTP Digest__
+![HTTP Basic Authentication Flow](/webhandbook/authentication/images/basic_auth.png?width=40pc)
+
+__HTTP Digest__\
 This is a more secure form of the Basic Authentication and uses the MD5 hash for the password before encoding username and password with Base64. The server also creates a random value called nonce which will have to be sent with every request in addition to the encoded and encrypted username and password. The nonce will then be hashed with the password on the server and compared with the database.
 
 It is more secure than HTTP Basic as it hashes the password instead of sending it in plain text format. This method does not provide a mechanism for logout, so the session lasts until the browser is closed. It is also vulnerable to man-in-the-middle attacks.
+
+![HTTP Digest Authentication Flow](/webhandbook/authentication/images/digest_auth.png?width=40pc)
 
 
 ### 3.2 Session-based Authentication
@@ -27,12 +31,16 @@ For Session-based authentication the user state is stored on the server without 
 
 Credentials are only used once so after the initial login the following ones are faster. However, cookies are sent with every request now, no matter if they require authentication or not. The session store, which is used for storing user session information, needs to be shared across multiple services to enable authentication. Because of this, it doesn't work well for RESTful services since REST is a stateless protocol. This method is also vulnerable to CSRF attacks.
 
+![Session-based Authentication Flow](/webhandbook/authentication/images/session_auth.png?width=40pc)
+
 ### 3.3 Token-based Authentication
 This method does not need a session and is therefore well suited for single page applications and RESTful APIs. The server receives and validates the user credentials and then generates a token which contains the user information. This token will then be sent with every request to the server. It will not get stored on the server but can be validated by the signature which makes this method stateless. In the client it can be maintained in local storage, session storage or even in cookies.
 
 Json Web Token (JWT) is the most commonly used implementation. A JWT consist of a header, a payload and a signature which are base64 encoded and concatenated. The header includes the token type and the hashing algorithm used. The payload includes the claims, which are statements about the subject. The signature is used to verify that the message wasn't changed along the way and signed with the private key.
 
 This method is suited for a microservices architecture, where multiple services require authentication. Its stateless approach enables it to be used with REST. Since they are only decoded but not encrypted, everybody can decode and read them, but only authenticated users can create valid signed tokens. As tokens cannot be deleted, only expire, a leaked token can be misused until it expires. Depending on how the token is saved on the client, it can lead to XSS or CSRF attacks.
+
+![Token-based Authentication Flow](/webhandbook/authentication/images/token_auth.png?width=40pc)
 
 ### 3.4 OpenID
 OpenID is a protocol used for social login. It uses existing information from social networking services such as Facebook, Twitter, or Google to login.
