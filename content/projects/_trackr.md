@@ -5,7 +5,7 @@ tags: ["projekt4"]
 pre: "<b>4. </b>"
 ---
 
-![Trackr Logo](/images/4_team_trackr/trackr_logo.png?width=40pc)
+![Trackr Logo](/images/4_team_trackr/trackr_logo.png?width=30pc)
 
 
 Änderungen einfach Tracken.
@@ -52,7 +52,7 @@ Wählt man zwei Versionen eines Dokuments aus, kann man sich die Unterschiede be
 
 Die Anwendung ist so konzipiert, dass zukünftig ermöglicht werden soll, dass Ordner freigegeben und mit anderen geteilt werden können, um gemeinsam darin zu arbeiten. So könnte eine Projektgruppe gemeinsam an Texten arbeiten, indem sich jeder den aktuellen Stand runterladen, bearbeiten und als neue Version hochladen könnte. Im Rahmen der verbleibenden Wochen wird das Collaboration-Feature aber nicht mehr umgesetzt.
 
-![Storyboard](/images/4_team_trackr/storyboard.mov?width=40pc)
+![Storyboard](/images/4_team_trackr/storyboard_trackr.jpg?width=40pc)
 
 ## 8 Verlauf & Schritte
 
