@@ -168,15 +168,44 @@ Main-Seite in Todos-Tab:
 Main-Seite in Links-Tab:
 ![Main-Seite in Links-Tab](/images/1_team_mystuff/main_links.jpg?width=50pc)
 
-#### 1.8 CI/CD
+##### 1.7.3 CI/CD Pipeline & Deployment-Prozess
 
-Lorem Ipsum
+Die Pipeline wurde mit __Heroku__ eingerichtet. Heroku ist eine Platform-as-a-Service Anbieter, der den ganzen Deployment- und Testprozess für eine Applikation mit wenigen Klicks ermöglicht.
+Als Erstes wird ein Konto auf dem Plattform eröffnet. Nach der erfolgreichen Erstellung des Konto wird der Nutzer auf die Dashboard-Seite umgeleitet. Um eine neue App zu deployen, wird auf die Schaltfläche _New → Create new app_ geklickt. 
 
-#### 1.9 JavaScript End to End Testing Framework: Cypress
+Erstellung neuer App auf Heroku:
+![Erstellung neuer App auf Heroku](/images/1_team_mystuff/ci1.jpg?width=50pc)
+
+Danach muss ein App-Name eingegeben und eine Server-Region ausgewählt werden. Als Erstes wird das Backend-Deployment eingerichtet. In diesem Fall heißt die App my-stuff-backend und Region wird als Europe ausgewählt. Die Erstellung einer neuen App auf Heroku wurde damit durchgeführt. Danach wird man direkt in die Einstellungsseite umgeleitet, wo eine Deployment-Methode ausgewählt werden kann. Der gesamte Code von MyStuff liegt auf GitHub, deshalb wird hier GitHub als Deployment-Methode ausgewählt. Heroku wird sich mit unserem GitHub-Konto verlinken und danach muss eine Repository im Konto ausgewählt werden.
+
+Auswahl der Deployment-Methode mit GitHub:
+![Auswahl der Deployment-Methode mit GitHub](/images/1_team_mystuff/ci2.jpg?width=50pc)
+
+Nachdem das Repository erfolgreich mit Heroku verlinkt ist, kann ein Branch ausgewählt werden, um zu deployen. Unser master-Branch wird dabei ausgewählt. Außerdem kann hier die Option _Automatic deploys_ für ein bestimmten Branch ein/ausgeschaltet werden. Dies bedeutet, wenn ein neuer Commit in den Branch kommt, wird die Pipeline das automatisch erkennen und einen neuen Deployment-Prozess durchführen. Falls diese noch Tests erkennen, werden diese ebenfalls durchgeführt. Als letztes wird beim _Manual deploy_-Bereich den gewünschten Branchs ausgewählt und auf die Schaltfläche _Deploy Branch_ geklickt. Damit wird der Prozess gestartet.
+
+Auswahl des Branchs für Deployment-Prozess:
+![Auswahl des Branchs für Deployment-Prozess](/images/1_team_mystuff/ci3.jpg?width=50pc)
+
+Um den Prozess richtig auszuführen, muss ein Buildpack hinzugefügt werden. Dies liegt im Tab _Settings_.
+Fürs Backend haben wir das Paket heroku/nodejs verwendet. Fürs Frontend haben wir das create-react-app-buildpack aus GitHub genommen. Dieses Paket liegt unter https://github.com/mars/create-react-app-buildpack.git
+
+Folgende Abbildungen geben einen Überblick für den Build-Status des Backends und Frontends:
+
+Übersicht des Deployment-Prozess des Backends:
+![Übersicht des Deployment-Prozess des Backends](/images/1_team_mystuff/ci4.jpg?width=50pc)
+
+Übersicht des Deployment-Prozess des Frontends:
+![Übersicht des Deployment-Prozess des Frontends](/images/1_team_mystuff/ci5.jpg?width=50pc)
+
+__Das Backend wird unter der URL-Adresse__: https://my-stuff-backend.herokuapp.com/ __freigegeben__. 
+
+__Ebenfalls ist das Frontend unter__ https://my-stuff-htw.herokuapp.com/ __zu erreichen__.
+
+#### 1.8 JavaScript End to End Testing Framework: Cypress
 
 Die Tests wurden mit Cypress durchgeführt. Cypress ist ein Framework, mit dem End-to-End-Tests durchgeführt werden können. 
 
-##### 1.9.1 Installation
+##### 1.8.1 Installation
 
 Um Cypress nutzen zu können, muss es zunächst installiert werden. Die Installation erfordert im ersten Schritt die lokale Installation von __Node__. Danach muss cypress in dem Projekt, in dem man die Tests schreiben möchte, generiert werden. In unserem Fall wurde cypress im Frontend installiert, da mit cypress das Frontend getestet werden kann. Mit diesem Befehl ___npm install cypress --save-dev___ kann cypress automatisch in das gewünschte Projekt installiert werden. 
 
@@ -203,7 +232,7 @@ describe("Abmelden", function () {
 });
 ```
 
-##### 1.9.2 Ausführung von Tests:
+##### 1.8.2 Ausführung von Tests:
 
 Die Ausführung der Tests wird über den folgenden Befehl durchgeführt: ___npx cypress open___. 
 Nach der Ausführung dieses Befehls sieht man die Benutzeroberfläche von Cypress mit den verschiedenen geschriebenen Tests.
@@ -216,4 +245,8 @@ Es ist möglich, die Tests einzeln auszuführen oder alle Tests direkt auszufüh
 ![Tests](/images/1_team_mystuff/tests.jpg?width=50pc)
 Auf diesem Bild ist zu bemerken, dass die ausgeführten Tests alle fehlerfrei durchlaufen werden. Erfolgreiche Tests sind grün markiert, während fehlgeschlagene Tests rot markiert sind.
 
-#### 2 Fazit
+#### 1.9 Fazit
+
+Die Planung sowie die Umsetzung anhand eines Prototyps wurde bei dem Projekt MyStuff erfolgreich umgesetzt. Der Prototyp enthält dabei die Grundlegenden Funktionalitäten, wie das Erstellen und Löschen von Modulen sowie das Anlegen und Bearbeiten von ToDos. Auch können neue Benutzer angelegt werden. Die Daten von den einzelnen Benutzern werden dabei erfolgreich in der MongoDB gespeichert. Des Weiteren konnte eine CI/CD-Pipeline erfolgreich aufgesetzt werden. Außerdem ist es möglich automatisierte Test durchzuführen.
+
+Die Implementierung der Links mit automatisierten Tags konnte auch Zeitgründen nicht mehr komplett umgesetzt werden.
